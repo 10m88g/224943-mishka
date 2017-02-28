@@ -1,7 +1,7 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Lubov Andreeva](https://up.htmlacademy.ru/adaptive/10/user/224943).
-* Наставник: `Неизвестно`.
+* Наставник: (Альбина Токарчук).
 
 ---
 
