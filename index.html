@@ -5,8 +5,87 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="main-header">
+      <div class="main-header__logo">
+        <img src="img/mishka-logo.svg" width="93" height="40" alt="Mishka">
+      </div>
+      <div class="main-header__nav  main-header__nav--closed">
+        <button class="main-header__nav-toggle" type="button">Открыть меню</button>
+      </div>
+    </header>
+    <section class="menu-header  menu-header__nav">
+      <header class="menu-header__headline">
+        <h1 class="menu-header__headline--slogan">Mishka - Милые штуки ручной работы для дома</h1>
+        <nav class="menu-header__nav  menu-header__nav--closed">
+          <p class="menu-header__nav--item">Предметы интерьера</p>
+        </nav>
+        <nav class="menu-header__nav  menu-header__nav--open">
+          <p class="menu-header__nav--item">Детские игрушки</p>
+        </nav>
+      </header>
+    </section>
+    <section class="item">
+      <h2 class="item__title">Вязаные корзинки></h2>
+      <span class="item__aside">Товар недели</span>
+      <p class="item__features">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <div class="item__desc">
+        <div class="item__desc--content-color">
+          <p class="item__desc--color">Цвет:</p>
+          <p class="item__desc--color-name">«Тиффани»/серый</p>
+        </div>
+        <div class="item__desc--content-size">
+          <p class="item__desc--size">Диаметр</p>
+          <p class="item__desc--size-name">25 см</p>
+        </div>
+        <div class="item__desc--content-size item__desc--content-height">
+          <p class="item__desc--size">Высота</p>
+          <p class="item__desc--size-name">15 см</p>
+        </div>
+      </div>
+      <div class="item__img">
+        <img src="img/mishka-box.png" width="260" height="315" alt="Вязаные корзинки">
+      </div>
+      <div class="item__price">Цена: 990 руб.</div>
+      <div class="item__button">
+        <a class="item__button--order  btn" href="#">Заказать</a>
+      </div>
+    </section>
+    <section class="advantages">
+      <h3 class="advantages__title">Коротко о нас</h3>
+      <ul class="advantages__items  advantages__items--pic">
+        <li>Экологически чистые материалы</li>
+        <li>Скандинавский стиль по российской цене</li>
+        <li>Увеличивает лайки на фотографиях</li>
+        <li>Связано вручную с любовью и умилением</li>
+        <li>Поддержка отечественного производителя</li>
+        <li>Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <h3 class="reviews__title">Отзывы</h3>
+      <blockquote class="reviews__items  slider__item">
+        <p class="reviews__items-desc">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <p class="reviews__auhor-name">Анастасия Красильникова</p>
+        <p class="reviews__auhor-contact">@misssssiskras</p>
+      </blockquote>
+      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+      <button class="reviews__next" type="button">Следующий отзыв</button>
+      <a class="reviews__write  btn" href="">Оставить свой</a>
+<input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+
+    </section>
+
+
+
+
+
+
+    </section>
+
+
+
+
 
   </body>
 </html>
