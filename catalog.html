@@ -2,28 +2,43 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Mishka - каталог</title>
   </head>
   <body>
     <header class="main-header">
       <div class="main-header__logo">
-        <img src="img/mishka-logo.svg" width="93" height="40" alt="Mishka">
+        <a href="index.html"><img src="img/mishka-logo.svg" width="93" height="40" alt="Mishka"></a>
       </div>
-      <div class="main-header__nav  main-header__nav--closed">
-        <button class="main-header__nav-toggle" type="button">Открыть меню</button>
+      <div class="main-header__nav">
+        <button class="main-header__nav-toggle  main-header__nav-toggle--opened  main-header__nav-toggle--closed" type="button">Открыть меню</button>
+      </div>
+      </div>
+      <div class="main-header__menu">
+        <ul class="main-header__menu-list">
+          <li class="main-header__menu-list-catalog"><a href="catalog.html">Каталог товаров</a></li>
+          <li <li class="main-header__menu-list-form"><a href="form.html">Вязание на заказ</a></li>
+        </ul>
+      </div>
+      <div class="main-header__search">
+        <ul class="main-header__search-list">
+          <li class="main-header__search-list-text"><a href="#">Поиск по сайту</a></li>
+        </ul>
+      </div>
+      <div class="main-header__basket">
+        <ul class="main-header__basket-list">
+          <li class="main-header__basket-list-text"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
       </div>
     </header>
     <main class="container">
-      <div class="main-headline">
-      <h1 class="main-headline__title">Каталог товаров</h1>
-      </div>
+      <h1 class="container__headline-title">Каталог товаров</h1>
       <section class="catalog">
         <div class="catalog__item">
           <div class="catalog__img">
             <a href="#"><img src="img/photo.png" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
           </div>
           <div class="catalog__item-content">
-            <a href="#"><h2 class="catalog__item-content-title">Зайчик-попрыгайчик</h2></a>
+            <h2 class="catalog__item-content-title"><a href="#">Зайчик-попрыгайчик</a></h2>
             <p class="catalog__item-content-desc">Рост 30 см, вес 200 г</p>
             <span class="catalog__item-content-price">1 200 руб.</span>
             <a href="#" class="catalog__item-backet"></a>
@@ -34,7 +49,7 @@
             <a href="#"><img src="img/photo.png" width="260" height="195" alt="Корзинка для белья"></a>
           </div>
           <div class="catalog__item-content">
-            <a href="#"><h2 class="catalog__item-content-title">Корзинка для белья</h2></a>
+            <h2 class="catalog__item-content-title"><a href="#">Корзинка для белья</a></h2>
             <p class="catalog__item-content-desc">Диаметр 15 см, высота 10 см</p>
             <span class="catalog__item-content-price">690 руб.</span>
             <a href="#" class="catalog__item-backet"></a>
@@ -45,21 +60,22 @@
             <a href="#"><img src="img/photo.png" width="260" height="195" alt="Большая корзинка для игрушек"></a>
           </div>
           <div class="catalog__item-content">
-            <a href="#"><h2 class="catalog__item-content-title">Большая корзинка для игрушек</h2></a>
+            <h2 class="catalog__item-content-title"><a href="#">Большая корзинка для игрушек<</a></h2>
             <p class="catalog__item-content-desc">Диаметр 30 см, высота 30 см</p>
             <span class="catalog__item-content-price">1 500 руб.</span>
             <a href="#" class="catalog__item-backet"></a>
           </div>
         </div>
       </section>
-      <section class="item-video">
-        <div class="item-video__process">
-            <h3 class="item-video__process-title">Процесс производства</h3>
-            <span class="item-video__process-item">видео</span>
-            <p class="item-video__process-desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <section class="video__process">
+        <div class="video__process-production">
+          <h3 class="video__process-production-title">Процесс производства</h3>
+          <a href=""><img class="video__process-production-pic"></a> /*видео*/
+          <a href=""><img class="video__process-production-pic"></a> /*иконка плей*/
+          <p class="video__process-production-desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         </div>
-        <div class="item-video-btn  item__button">
-            <a class="item-video-order  btn" href="#">Сделать заказ</a>
+        <div class="video__process-btn">
+          <a class="video__process-btn--order  btn" href="#">Сделать заказ</a>
         </div>
       </section>
     </main>
@@ -74,7 +90,7 @@
         </div>
         <div class="page-footer__copyright">
           <span class="page-footer__copyright-title">Разработано:</span>
-          <a class="btn  page-footer__copyright-link" href="#">HTML Academy</a>
+          <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/"><img src="img/academy-logo.png" width="28" height="35" alt="Лого HTML-academy">HTML Academy</a>
         </div>
       </div>
     </footer>
