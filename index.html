@@ -2,15 +2,33 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Mishka - главная страница</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__logo">
-        <img src="img/mishka-logo.svg" width="93" height="40" alt="Mishka">
+      <div class="main-header__holder">
+        <div class="main-header__logo">
+          <img src="img/mishka-logo.svg" width="93" height="40" alt="Mishka">
+        </div>
+        <div class="main-header__nav">
+          <button class="main-header__nav-toggle  main-header__nav-toggle--opened  main-header__nav-toggle--closed" type="button">Открыть меню</button>
+        </div>
       </div>
-      <div class="main-header__nav  main-header__nav--closed">
-        <button class="main-header__nav-toggle" type="button">Открыть меню</button>
+      <div class="main-header__menu">
+        <ul class="main-header__menu-list">
+          <li class="main-header__menu-list-catalog"><a href="catalog.html">Каталог товаров</a></li>
+          <li <li class="main-header__menu-list-form"><a href="form.html">Вязание на заказ</a></li>
+        </ul>
+      </div>
+      <div class="main-header__search">
+        <ul class="main-header__search-list">
+          <li class="main-header__search-list-text"><a href="#">Поиск по сайту</a></li>
+        </ul>
+      </div>
+      <div class="main-header__basket">
+        <ul class="main-header__basket-list">
+          <li class="main-header__basket-list-text"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
       </div>
     </header>
     <main class="main-container">
@@ -85,7 +103,7 @@
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__item">
           <p class="contacts__item-email">e-mail:</p>
-          <p class="contacts__item-email-name">info@mimimishkashop.ru</p>
+          <a href="mailto:info@mimimishkashop.ru" class="contacts__item-email-name">info@mimimishkashop.ru</a>
         </div>
         <div class="contacts__item">
           <p class="contacts__item-address">адрес:</p>
@@ -106,7 +124,7 @@
         </div>
         <div class="page-footer__copyright">
           <span class="page-footer__copyright-title">Разработано:</span>
-          <a class="btn  page-footer__copyright-link" href="#">HTML Academy</a>
+          <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/"><img src="img/academy-logo.png" width="28" height="35" alt="Лого HTML-academy">HTML Academy</a>
         </div>
       </div>
     </footer>
