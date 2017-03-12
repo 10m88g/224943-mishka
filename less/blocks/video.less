@@ -1,0 +1,41 @@
+@import "../variable.less";
+
+.video {
+  width: 260px;
+  margin: 0 auto;
+  border: #ececec solid 1px;
+
+  .video__process-production {
+
+    h2 {
+      padding: 25px 0 25px 90px;
+      .h2-style-catalog;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    &-img {
+      width: 260px;
+      height: 315px;
+    }
+  }
+
+  &__process-desc {
+    padding: 30px 27px;
+
+    &-text {
+      .font-desc;
+      font-size: 13px;
+    }
+  }
+
+  &__process-btn-order {
+    .btn;
+    .font-button;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 14px 0;
+    margin-top: 30px;
+  }
+}

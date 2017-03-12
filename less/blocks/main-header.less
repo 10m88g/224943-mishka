@@ -1,0 +1,115 @@
+/* Файл main-header.less */
+@import "../variable.less";
+
+
+.main-header {
+margin: 0 auto;
+position: relative;
+width: 100%;
+
+  &__holder {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    width: 87px;
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+      text-align: center;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 4px;
+    right: 30px;
+    font-size: 0;
+
+    &-toggle--opened {
+      width: 22px;
+      height: 22px;
+      background-image: url(../img/icon-menu-open.svg);
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      border: none;
+      font-size: 0;
+    }
+
+    &-toggle--closed {
+      background-image: url(../img/icon-menu-close.svg);
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__menu {
+    clear: both;
+
+    ul {
+      font-size: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-list-catalog,
+    &-list-form {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      text-align: left;
+      padding: 30px 0;
+      border-top: 1px solid #ebebeb;
+    }
+
+    &-list-catalog a,
+    &-list-form a {
+      text-decoration: none;
+      font-size: @fsize-menu;
+      line-height: @fheight-menu;
+      color: @color-menu;
+      font-weight: @fweight-menu;
+      padding-left: 75px;
+    }
+  }
+
+  &__search,
+  &__basket {
+
+    ul {
+      font-size: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-list-text {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      text-align: left;
+      padding: 30px 0;
+      border-top: 1px solid #ebebeb;
+    }
+
+    &-list-text a {
+      text-decoration: none;
+      font-size: @fsize-menu;
+      line-height: @fheight-menu;
+      color: @color-menu;
+      font-weight: @fweight-menu;
+      padding-left: 75px;
+    }
+  }
+}
+

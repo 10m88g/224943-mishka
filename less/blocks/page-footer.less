@@ -1,0 +1,37 @@
+@import "../variable.less";
+
+.page-footer {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px 0;
+
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+  &__social {
+    border-bottom: #e4e4e4 solid 1px;
+
+    &-links {
+      .ul-style;
+    }
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+      font-size: 10px; /*временно*/
+    }
+  }
+
+  &__copyright {
+    list-style-type: none;
+    display: inline-block;
+
+    &-title {
+      .font-footer;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+/*вязаные корзинки*/
+@import "../variable.less";
+
+.item {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+    &__title {
+
+      h2 {
+        .h2-style;
+      }
+      span {
+        .turquoise-font-title;
+        padding-top: 5px;
+      }
+    }
+
+    &__features {
+      padding: 25px 0;
+
+      p {
+        .font-desc;
+      }
+    }
+
+    &__desc {
+      margin-bottom: 30px;
+
+      &-content {
+        border-bottom: #f1f1f1 solid 1px;
+
+        p {
+        .font-desc;
+        }
+
+        &-color {
+          display: inline-block;
+          vertical-align: middle;
+          padding: 7px 0px;
+          width: 35%;
+
+          &-name {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+        &-size {
+          display: inline-block;
+          vertical-align: inherit;
+          width: 35%;
+          padding: 7px 0px;
+
+              &-name {
+                display: inline-block;
+                vertical-align: middle;
+               }
+        }
+      }
+    }
+
+    &__img {
+      width: 260px;
+      height: 315px;
+    }
+
+    &__price {
+      .font-item-price;
+      text-align: center;
+      margin: 28px 0;
+
+    }
+
+    &__button {
+      .btn;
+
+      &-order {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 14px 0;
+        .font-button;
+      }
+    }
+}
