@@ -6,83 +6,88 @@
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
+}
 
-    &__title {
+.item__title {
 
-      h2 {
-        .h2-style;
-      }
-      span {
-        .turquoise-font-title;
-        padding-top: 5px;
-      }
-    }
+  h2 {
+    margin: 0;
+    .font-style(@font-size: 25px, @line-height: 30px, @base-color: #000000);
+  }
 
-    &__features {
-      padding: 25px 0;
+  span {
+    .font-style(@line-height: 20px, @base-color: #8dd0bb);
+    text-transform: uppercase;
+    padding-top: 5px;
+  }
+}
 
-      p {
-        .font-desc;
-      }
-    }
+.item__features {
+  padding: 25px 0;
 
-    &__desc {
-      margin-bottom: 30px;
+  p {
+    margin: 0;
+    .font-style(@font-size: 15px, @font-weight: normal);
+  }
+}
 
-      &-content {
-        border-bottom: #f1f1f1 solid 1px;
+.item__desc {
+  margin-bottom: 30px;
+}
 
-        p {
-        .font-desc;
-        }
+.item__desc-content {
+  border-bottom: #f1f1f1 solid 1px;
 
-        &-color {
-          display: inline-block;
-          vertical-align: middle;
-          padding: 7px 0px;
-          width: 35%;
+  p {
+    margin: 0;
+    .font-style(@font-size: 15px, @font-weight: normal);
+  }
+}
 
-          &-name {
-            display: inline-block;
-            vertical-align: middle;
-          }
-        }
+.item__desc-content-color {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px 0px;
+  width: 35%;
+}
 
-        &-size {
-          display: inline-block;
-          vertical-align: inherit;
-          width: 35%;
-          padding: 7px 0px;
+.item__desc-content-color-name {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-              &-name {
-                display: inline-block;
-                vertical-align: middle;
-               }
-        }
-      }
-    }
+.item__desc-content-size {
+  display: inline-block;
+  vertical-align: inherit;
+  width: 35%;
+  padding: 7px 0px;
+}
 
-    &__img {
-      width: 260px;
-      height: 315px;
-    }
+.item__desc-content-size-name {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-    &__price {
-      .font-item-price;
-      text-align: center;
-      margin: 28px 0;
+.item__img {
+  width: 260px;
+  height: 315px;
+  background-color: @bg-img;
+}
 
-    }
+.item__price {
+  .font-style;
+  text-align: center;
+  margin: 28px 0;
+}
 
-    &__button {
-      .btn;
+.item__button {
+  .btn;
+}
 
-      &-order {
-        width: 100%;
-        display: inline-block;
-        vertical-align: middle;
-        padding: 14px 0;
-        .font-button;
-      }
-    }
+.item__button-order {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 14px 0;
+  .font-button;
 }

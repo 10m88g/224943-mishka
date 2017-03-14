@@ -2,36 +2,35 @@
 
 .page-footer {
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: @bg-footer;
   padding: 20px 0;
+}
 
-  &__wrapper {
-    width: 260px;
-    margin: 0 auto;
-    text-align: center;
+.page-footer__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.page-footer__social {
+  border-bottom: #e4e4e4 solid 1px;
+
+  ul {
+    margin: 0;
   }
 
-  &__social {
-    border-bottom: #e4e4e4 solid 1px;
-
-    &-links {
-      .ul-style;
-    }
-
-    li {
-      list-style-type: none;
-      display: inline-block;
-      font-size: 10px; /*временно*/
-    }
-  }
-
-  &__copyright {
+  li {
     list-style-type: none;
     display: inline-block;
-
-    &-title {
-      .font-footer;
-    }
+    font-size: 10px; /*временно*/
   }
+}
+
+.page-footer__copyright {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.page-footer__copyright-title {
+  .font-style(@font-size: 19px, @line-height: 18px, @base-color: #000000);
 }

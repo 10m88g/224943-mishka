@@ -4,23 +4,27 @@
 .advantages {
   width: 100%;
   margin-top: 30px;
-  mardin-bottom: 60px;
+  margin-bottom: 60px;
+}
 
-  &__items {
-    width: 260px;
-    margin: 0 auto;
+.advantages__items {
+  width: 260px;
+  margin: 0 auto;
 
-    h2 {
-      .h2-style;
-    }
+  h2 {
+    margin: 0;
+    .font-style(@font-size: 25px, @line-height: 30px, @base-color: #000000);
+  }
+}
 
-    &-list {
-      .font-advantages-list;
-      .ul-style;
+.advantages__items-list {
+  .font-style(@line-height: 20px, @base-color: #000000);
+  text-align: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
-      li {
-      margin-top: 20px;
-      }
-    }
+  li {
+    margin-top: 20px;
   }
 }
