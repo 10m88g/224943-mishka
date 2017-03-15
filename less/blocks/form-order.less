@@ -1,4 +1,5 @@
 @import "../variable.less";
+@import "../mixins.less";
 
 .form-order {
   width: 260px;
@@ -23,91 +24,79 @@
 }
 
 .form-order__fieldset-name {
-  .font-style(@font-size: 17px, @line-height: 16px, @base-color: #8dd0bb);
+  .font-style(@line-height: 16px, @base-color: #8dd0bb);
   text-transform: uppercase;
 }
 
 
-.form-order__fieldset-type { /*тип*/
+.form-order__fieldset-type {
 
-  label {
-    position: relative;
-    .font-style(@font-size: 17px, @line-height: 18px, @base-color: #000000, @font-weight: normal);
-    padding-left: 60px;
-    display: block;
-    cursor: pointer;
-    margin: 30px 0;
-  }
+} /*тип*/
 
-  input {
-    display: none;
-  }
+.form-order__label {
+  position: relative;
+  .font-style(@line-height: 18px, @base-color: #000000, @font-weight: normal);
+  padding-left: 60px;
+  display: block;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.form-order__field {
+  display: none;
 }
 
 .form-order__fieldset-color { /*цвета*/
+}
 
-  label {
-    position: relative;
-    .font-style(@font-size: 17px, @line-height: 18px, @base-color: #000000, @font-weight: normal);
-    padding-left: 60px;
-    display: block;
-    cursor: pointer;
-    margin: 22px 0;
-  }
-
-  input {
-    display: none;
-  }
+.form-order__field-color { /*инпуты цветов*/
+  display: none;
 }
 
 .form-order__fieldset-contact {
   width: 100%;
   margin-top: 10px;
+}
 
-  label {
+.form-order__label-contact {
     display: block;
     vertical-align: middle;
-    .font-style(@font-size: 17px, @line-height: 18px, @base-color: #000000);
+    .font-style(@line-height: 18px, @base-color: #000000);
     padding-bottom: 15px;
     padding-top: 20px;
-  }
+}
 
-  input {
+.form-order__field-contact {
     width: 100%;
     padding-bottom: 15px;
     border: none;
     border-bottom: #000000 solid 2px;
-    .font-style(@font-size: 17px, @line-height: 18px, @font-weight: normal);
-  }
+    .font-style(@line-height: 18px, @font-weight: normal);
 }
 
-.form-order__fieldset-phone,
-.form-order__fieldset-email,
-.form-order__fieldset-add {
+.form-order__info {
   margin-top: 30px;
 }
 
-.form-order__fieldset-input-phone,
-.form-order__fieldset-input-email,
-.form-order__fieldset-input-add {
+.form-order__field-form {
   padding-top: 20px;
+}
 
-  input {
-    .font-style(@font-size: 17px, @line-height: 18px, @font-weight: normal);
+.form-order__info-input {
+    .font-style(@line-height: 18px, @font-weight: normal);
     width: 100%;
     padding-bottom: 15px;
     border: none;
     border-bottom: #000000 solid 2px;
-  }
 }
 
-.form-order__fieldset-add {
+.form-order__info {
 
   textarea {
     width: 100%;
     padding: 15px;
     .font-style (@line-height: 18px, @base-color: #000000, @font-weight: normal);
-    font-family: Open Sans, arial;
+    font-family: "Open Sans", "Arial", sans-serif;
     border: #000000 solid 2px;
   }
 
@@ -125,7 +114,7 @@
 
   button {
     .btn;
-    .font-button;
+    .style-button;
     display: inline-block;
     vertical-align: middle;
     padding: 14px 0;

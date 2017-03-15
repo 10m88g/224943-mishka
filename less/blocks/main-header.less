@@ -1,4 +1,5 @@
 @import "../variable.less";
+@import "../mixins.less";
 
 .main-header {
   margin: 0 auto;
@@ -73,13 +74,12 @@
   text-align: left;
   padding: 30px 0;
   border-top: 1px solid #ebebeb;
-}
 
-.main-header__menu-list-catalog a,
-.main-header__menu-list-form a {
-  text-decoration: none;
-  .font-style(@base-color: #000000);
-  padding-left: 75px;
+  a {
+    text-decoration: none;
+    .font-style(@base-color: #000000);
+    padding-left: 75px;
+  }
 }
 
 .main-header__search,
@@ -92,8 +92,8 @@
   }
 }
 
-.main-header__search-list-text,
-.main-header__basket-list-text {
+.main-header__search-text,
+.main-header__basket-text {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
@@ -102,8 +102,8 @@
   border-top: 1px solid #ebebeb;
 }
 
-.main-header__search-list-text a,
-.main-header__basket-list-text a {
+.main-header__search-text a,
+.main-header__basket-text a {
   text-decoration: none;
   .font-style(@base-color: #000000);
   padding-left: 75px;

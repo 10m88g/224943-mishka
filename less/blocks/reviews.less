@@ -1,4 +1,5 @@
 @import "../variable.less";
+@import "../mixins.less";
 
 .reviews {
   width: 100%;
@@ -43,6 +44,9 @@
 .reviews__items-btn {
   .btn;
   margin-bottom: 38px;
+}
+
+.reviews__btn {
 
   &--prev,
   &--next {
@@ -57,5 +61,5 @@
   display: inline-block;
   vertical-align: middle;
   padding: 14px 0;
-  .font-button;
+  .style-button;
 }
