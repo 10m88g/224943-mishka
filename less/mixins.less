@@ -5,19 +5,26 @@
   font-weight: @font-weight;
 }
 
-.style-button(@font-size: 17px, @line-height: 20px, @base-color: #464646, @font-weight: bold, @text-transform: uppercase, @text-align: center, @text-decoration: none) {
-  font-size: @font-size;
-  line-height: @line-height;
-  color: @base-color;
-  font-weight: @font-weight;
-  text-transform: @text-transform;
-  text-align: @text-align;
-  text-decoration: @text-decoration;
+
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
 }
-.btn {
-  width: 100%;
-  border: 2px solid #464646;
+
+.container() {
+  width: 320px;
   margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 768px;
+  }
+
+  @media @desktop-widths {
+    width: 1150px;
+  }
 }
-
-
