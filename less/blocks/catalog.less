@@ -1,0 +1,58 @@
+@import "../variable.less";
+@import "../mixins.less";
+
+.catalog {
+  width: 260px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+  border: #ececec solid 1px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.catalog__item-img {
+  width: 260px;
+  height: 195px;
+}
+
+.catalog__item-content {
+  padding: 27px;
+
+  h2 {
+    margin: 0;
+    padding-bottom: 15px;
+    .font-style(@base-color: #000000);
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.catalog__item-content-desc {
+  .font-style(@font-size: 13px, @line-height: 30px, @font-weight: normal);
+  padding-bottom: 26px;
+  border-bottom: #ececec solid 1px;
+}
+
+.catalog__item-content-price {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 26px;
+  .font-style(@font-size: 15px);
+}
+
+
+/*
+    &-backet {
+      width: 22px;
+      height: 22px;
+      background-image: url(../img/icon-cart.svg)
+      }
+*/

@@ -1,0 +1,44 @@
+@import "../variable.less";
+@import "../mixins.less";
+
+.menu-header {
+
+}
+
+.menu-header__headline {
+  position: relative;
+  width: 100%;
+  background-color: @bg-light-grey;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+
+  h1 {
+    padding-top: 75px;
+    padding-bottom: 120px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0;
+    text-align: center;
+    .font-style(@font-size: 27px, @line-height: 30px, @base-color: #050002);
+  }
+}
+
+.menu-header__nav {
+
+}
+
+.menu-header__nav-link {
+  vertical-align: middle;
+  display: block;
+  padding: 28px 120px 28px 30px;
+  background-color: #8dd0bb;
+  .font-style(@font-size: 19px, @base-color: #ffffff);
+  text-align: left;
+  text-decoration: none;
+
+  &--dark {
+    background-color: #80c2b2;
+  }
+}

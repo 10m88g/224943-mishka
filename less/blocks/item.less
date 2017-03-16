@@ -1,0 +1,147 @@
+/*вязаные корзинки*/
+@import "../variable.less";
+@import "../mixins.less";
+
+.item {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.item__title {
+
+  h2 {
+    margin: 0;
+    .font-style(@font-size: 25px, @line-height: 30px, @base-color: #000000);
+  }
+
+  span {
+    .font-style(@line-height: 20px, @base-color: #8dd0bb);
+    text-transform: uppercase;
+    padding-top: 5px;
+  }
+}
+
+.item__features {
+  padding: 25px 0;
+
+  p {
+    margin: 0;
+    .font-style(@font-size: 15px, @font-weight: normal);
+  }
+}
+
+.item__desc {
+  margin-bottom: 30px;
+}
+
+.item__desc-content {
+  border-bottom: #f1f1f1 solid 1px;
+
+  p {
+    margin: 0;
+    .font-style(@font-size: 15px, @font-weight: normal);
+  }
+}
+
+.item__desc-content-color {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px 0px;
+  width: 35%;
+}
+
+.item__desc-content-color-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item__desc-content-size {
+  display: inline-block;
+  vertical-align: inherit;
+  width: 35%;
+  padding: 7px 0px;
+}
+
+.item__desc-content-size-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item__img {
+  width: 260px;
+  height: 315px;
+  background-color: @bg-light-grey;
+}
+
+.item__price {
+  .font-style;
+  text-align: center;
+  margin: 28px 0;
+}
+
+
+
+.item__button-order {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 14px 0;
+}
+
+
+@media @tablet-widths {
+
+  .item {
+    width: 668px;
+    min-height: 680px; /*временно*/
+
+    padding: 50px 0;
+
+}
+
+.item__title {
+  display: inline-block;
+
+}
+
+.item__title h2 {
+    float: left;
+    width: 500px;
+    .font-style(@font-size: 43px, @line-height: 50px, @base-color: #000000);
+  }
+
+.item__title  span {
+    float: right;
+    width: 167px;
+    .font-style(@line-height: 20px, @base-color: #8dd0bb);
+    text-transform: uppercase;
+    padding-top: 5px;
+  }
+
+  .item__features {
+    clear: both;
+    margin-top: 50px;
+  }
+
+  .item__features p {
+    .font-style(@font-size: 17px, @line-height: 30px, @font-weight: normal);
+  }
+  .item__features-left {
+    float: left;
+    width: 330px;
+
+  }
+  .item__features-right {
+    float: right;
+    width: 330px;
+  }
+  .item__desc-content p {
+    .font-style(@line-height: 20px, @font-weight: normal);
+  }
+
+
+
+
+}

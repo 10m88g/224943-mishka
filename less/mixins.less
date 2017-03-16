@@ -1,0 +1,30 @@
+.font-style(@font-size: 17px, @line-height: 24px, @base-color: #464646, @font-weight: bold) {
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @base-color;
+  font-weight: @font-weight;
+}
+
+
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.h-container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 768px;
+  }
+
+  @media @desktop-widths {
+    width: 1150px;
+  }
+}

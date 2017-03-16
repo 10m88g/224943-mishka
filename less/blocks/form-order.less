@@ -1,0 +1,122 @@
+@import "../variable.less";
+@import "../mixins.less";
+
+.form-order {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.form-order__desc {
+  padding: 28px 0;
+
+  p {
+  .font-style(@font-size: 13px, @font-weight: normal);
+  margin: 0;
+  }
+}
+
+.form-order__fieldset {
+  width: 100%;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.form-order__fieldset-name {
+  .font-style(@line-height: 16px, @base-color: #8dd0bb);
+  text-transform: uppercase;
+}
+
+
+.form-order__fieldset-type {
+
+} /*тип*/
+
+.form-order__label {
+  position: relative;
+  .font-style(@line-height: 18px, @base-color: #000000, @font-weight: normal);
+  padding-left: 60px;
+  display: block;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.form-order__field {
+  display: none;
+}
+
+.form-order__fieldset-color { /*цвета*/
+}
+
+.form-order__field-color { /*инпуты цветов*/
+  display: none;
+}
+
+.form-order__fieldset-contact {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-order__label-contact {
+    display: block;
+    vertical-align: middle;
+    .font-style(@line-height: 18px, @base-color: #000000);
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+.form-order__field-contact {
+    width: 100%;
+    padding-bottom: 15px;
+    border: none;
+    border-bottom: #000000 solid 2px;
+    .font-style(@line-height: 18px, @font-weight: normal);
+}
+
+.form-order__info {
+  margin-top: 30px;
+}
+
+.form-order__field-form {
+  padding-top: 20px;
+}
+
+.form-order__info-input {
+    .font-style(@line-height: 18px, @font-weight: normal);
+    width: 100%;
+    padding-bottom: 15px;
+    border: none;
+    border-bottom: #000000 solid 2px;
+}
+
+.form-order__info {
+
+  textarea {
+    width: 100%;
+    padding: 15px;
+    .font-style (@line-height: 18px, @base-color: #000000, @font-weight: normal);
+    font-family: "Open Sans", "Arial", sans-serif;
+    border: #000000 solid 2px;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 15px;
+    .font-style(@font-size: 14px, @line-height: 16px, @font-weight: normal);
+    text-align: left;
+  }
+}
+
+.form-order__submit {
+  margin-top: 30px;
+
+  button {
+
+    display: inline-block;
+    vertical-align: middle;
+    padding: 14px 0;
+    background-color: @bg-white;
+  }
+}
