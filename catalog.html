@@ -4,80 +4,84 @@
     <meta charset="utf-8">
     <title>Mishka - каталог товаров</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__holder">
+      <div class="main-header__container">
         <div class="main-header__logo">
           <a href="index.html"><img src="img/logo-mobile.svg" width="87" height="37" alt="Mishka"></a>
         </div>
-        <div class="main-header__nav">
-          <button class="main-header__nav-toggle  main-header__nav-toggle--opened  main-header__nav-toggle--closed" type="button">Открыть меню</button>
+        <div class="main-header__menu  main-header__nav--opened  main-header__nav--nojs">
+            <button class="main-header__toggle" type="button">Открыть меню</button>
+          <div class="main-header__nav">
+            <ul class="main-header__menu-nav">
+              <li class="main-header__menu-list-catalog"><a>Каталог товаров</a></li>
+              <li class="main-header__menu-list"><a href="form.html">Вязание на заказ</a></li>
+            </ul>
+            <ul class="main-header__user-nav">
+              <li class="main-header__user-list"><a href="#">Поиск по сайту</a></li>
+              <li class="main-header__user-list"><a href="#">Корзина: пока пуста</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="main-header__menu">
-        <ul class="main-header__menu-list">
-          <li class="main-header__menu-list-catalog"><a>Каталог товаров</a></li>
-          <li class="main-header__menu-list-form"><a href="form.html">Вязание на заказ</a></li>
-        </ul>
-      </div>
-      <div class="main-header__user">
-        <ul class="main-header__user-list">
-          <li class="main-header__search-text"><a href="#">Поиск по сайту</a></li>
-          <li class="main-header__basket-text"><a href="#">Корзина: пока пуста</a></li>
-        </ul>
       </div>
     </header>
-    <main class="container">
-      <h1 class="container__headline-title">Каталог товаров</h1>
-      <section class="catalog">
-        <div class="catalog__item">
-          <div class="catalog__item-img">
-            <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+    <main class="container-catalog">
+      <h1 class="container-catalog__headline">Каталог товаров</h1>
+      <div class="container-catalog__wrapper">
+        <section class="catalog">
+          <div class="catalog__item">
+            <div class="catalog__item-img">
+              <a href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+            </div>
+            <div class="catalog__item-content">
+              <h2><a href="#">Зайчик-попрыгайчик</a></h2>
+              <p class="catalog__item-content-desc">Рост 30 см, вес 200 г</p>
+              <span class="catalog__item-content-price">1 200 руб.</span>
+              <a href="#" class="catalog__item-content-backet"></a>
+            </div>
           </div>
-          <div class="catalog__item-content">
-            <h2><a href="#">Зайчик-попрыгайчик</a></h2>
-            <p class="catalog__item-content-desc">Рост 30 см, вес 200 г</p>
-            <span class="catalog__item-content-price">1 200 руб.</span>
-            <a href="#" class="catalog__item-content-backet"></a>
+          <div class="catalog__item">
+            <div class="catalog__item-img">
+              <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья"></a>
+            </div>
+            <div class="catalog__item-content">
+              <h2><a href="#">Корзинка для белья</a></h2>
+              <p class="catalog__item-content-desc">Диаметр 15 см, высота 10 см</p>
+              <span class="catalog__item-content-price">690 руб.</span>
+              <a href="#" class="catalog__item-content-backet"></a>
+            </div>
           </div>
-        </div>
-        <div class="catalog__item">
-          <div class="catalog__item-img">
-            <a href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья"></a>
+          <div class="catalog__item">
+            <div class="catalog__item-img">
+              <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
+            </div>
+            <div class="catalog__item-content">
+              <h2><a href="#">Большая корзинка для игрушек</a></h2>
+              <p class="catalog__item-content-desc">Диаметр 30 см, высота 30 см</p>
+              <span class="catalog__item-content-price">1 500 руб.</span>
+              <a href="#" class="catalog__item-content-backet"></a>
+            </div>
           </div>
-          <div class="catalog__item-content">
-            <h2><a href="#">Корзинка для белья</a></h2>
-            <p class="catalog__item-content-desc">Диаметр 15 см, высота 10 см</p>
-            <span class="catalog__item-content-price">690 руб.</span>
-            <a href="#" class="catalog__item-content-backet"></a>
+        </section>
+        <section class="video">
+          <div class="video__process-production">
+            <a class="video__process-link" href="#"><img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Видео процесс"></a> <!--видео и иконка плей-->
+            <div class="video__process-desc">
+              <h2 class="video__process-production-h2" >Процесс производства</h2>
+              <p class="video__process-desc-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <a class="video__process-btn-order  style-btn" href="#">Сделать заказ</a>
+            </div>
           </div>
-        </div>
-        <div class="catalog__item">
-          <div class="catalog__item-img">
-            <a href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
-          </div>
-          <div class="catalog__item-content">
-            <h2><a href="#">Большая корзинка для игрушек</a></h2>
-            <p class="catalog__item-content-desc">Диаметр 30 см, высота 30 см</p>
-            <span class="catalog__item-content-price">1 500 руб.</span>
-            <a href="#" class="catalog__item-content-backet"></a>
-          </div>
-        </div>
-      </section>
-      <section class="video">
-        <div class="video__process-production">
-          <h2>Процесс производства</h2>
-          <a href="#"><img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Видео процесс"></a> <!--видео и иконка плей-->
-          <div class="video__process-desc">
-            <p class="video__process-desc-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <a class="video__process-btn-order  style-btn" href="#">Сделать заказ</a>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
-    <footer class="page-footer">
+     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <div class="page-footer__logo-wrapper">
+          <img class="page-footer__logo" src="img/logo-mobile.svg" width="87" height="37" alt="Mishka">
+        </div>
         <div class="page-footer__social">
           <ul class="page-footer__social-links">
             <li><a class="social-link  social-link--inst" href="#">Мы в Инстаграмме</a></li>

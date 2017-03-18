@@ -1,16 +1,34 @@
 @import "../variable.less";
 @import "../mixins.less";
 
-
-.container {
+.container-catalog {
   width: 100%;
-  padding-bottom: 57px;
+  margin: 0 auto;
 }
 
-.container__headline-title {
+.container-catalog__headline {
   padding: 73px 0;
-  background-color: #f1f1f1;
+  background-color: @bg-light-grey;
   margin: 0;
   .font-style(@font-size: 27px, @line-height: 30px, @base-color: #050002);
   text-align: center;
+}
+
+.container-catalog__wrapper {
+  .w-container();
+}
+
+@media @tablet-widths {
+
+  .container-catalog__headline {
+    padding: 73px 70px;
+    .font-style(@font-size: 43px, @line-height: 50px);
+  }
+}
+
+@media @desktop-widths {
+
+  .container-catalog__headline {
+    .font-style(@font-size: 53px, @line-height: 57px);
+  }
 }

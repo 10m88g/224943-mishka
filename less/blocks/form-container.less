@@ -6,9 +6,25 @@
   padding-bottom: 55px;
 }
 
-.form-container__headline-title {
+.form-container__headline {
   padding: 73px 0;
-  background-color: #f1f1f1;
-  .font-style(@font-size: 27px, @line-height: 30px, @base-color: #050002);
+  background-color: @bg-light-grey;
+  margin: 0;
   text-align: center;
+  .font-style(@font-size: 27px, @line-height: 30px, @base-color: #050002);
+}
+
+@media @tablet-widths {
+
+  .form-container__headline {
+    padding: 73px 70px;
+    .font-style(@font-size: 43px, @line-height: 50px);
+  }
+}
+
+@media @desktop-widths {
+
+  .form-container__headline {
+    .font-style(@font-size: 53px, @line-height: 57px);
+  }
 }

@@ -42,3 +42,56 @@
     background-color: #80c2b2;
   }
 }
+
+@media @tablet-widths {
+
+  .menu-header {
+     width: auto;
+   }
+
+  .menu-header__headline h1 {
+    padding-top: 160px;
+    padding-bottom: 485px;
+    padding-right: 135px;
+    padding-left: 135px;
+    margin: 0;
+    .font-style(@font-size: 43px, @line-height: 50px, @base-color: #000000);
+  }
+
+  .menu-header__nav {  /*должен центроваться*/
+    .w-container();
+    position: absolute;
+    bottom:0;
+    left:50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .menu-header__nav-link {
+    width: 130px;
+    padding: 28px 169px 30px 35px;
+  }
+}
+
+@media @desktop-widths {
+
+   .menu-header__headline h1 {
+     padding-top: 160px;
+     padding-bottom: 470px;
+     padding-right: 270px;
+     padding-left: 270px;
+     margin: 0;
+     .font-style(@font-size: 53px, @line-height: 57px, @base-color: #050002);
+   }
+
+   .menu-header__nav {
+
+   }
+
+  .menu-header__nav-link {
+    width: 135px;
+    padding: 28px 350px 30px 40px;
+  }
+}
