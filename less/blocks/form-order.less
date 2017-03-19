@@ -4,10 +4,12 @@
 .form-order {
   width: 260px;
   margin: 0 auto;
+  padding-top: 28px;
+  padding-bottom: 50px;
 }
 
 .form-order__desc {
-  padding: 28px 0;
+  margin-bottom: 28px;
 
   p {
   .font-style(@font-size: 13px, @font-weight: normal);
@@ -30,7 +32,7 @@
 
 
 .form-order__fieldset-type {
-} /*тип*/
+}
 
 .form-order__label {
   position: relative;
@@ -84,13 +86,20 @@
   padding-top: 20px;
 }
 
+.form-order__field-wrap-list {
+
+  &--last {
+    padding-top: 20px;
+  }
+}
+
 .form-order__info-input {
   .font-style(@line-height: 18px, @font-weight: normal);
   width: 100%;
+  margin-top: 20px;
   padding-bottom: 15px;
   border: none;
   border-bottom: #000000 solid 2px;
-  background-color: @bg-light-grey;
 }
 
 .form-order__info {
@@ -128,9 +137,11 @@
 }
 
 @media @tablet-widths {
+
   .form-order {
     width: 100%;
     position: relative;
+    padding-top: 70px;
   }
 
   .form-order__bg {
@@ -139,7 +150,7 @@
 
   .form-order__desc {
     .w-container();
-  padding: 50px;
+    margin-bottom: 55px;
 
     p {
       .font-style(@line-height: 30px, @font-weight: normal);
@@ -149,9 +160,8 @@
   .form-order__field-wrap {
     .w-container();
     padding: 60px 0;
-    width: 100%;
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap: wrap;
   }
 
   .form-order__fieldset-name {
@@ -199,11 +209,15 @@
     width: 30%;
   }
   .form-order__field-contact {
-    width: 64%;
+    width: 69%;
   }
 
   .form-order__field-form {
     width: 75%;
+  }
+
+  .form-order__info-input {
+    background-color: @bg-light-grey;
   }
 
   .form-order__submit {
@@ -213,18 +227,44 @@
     text-align: left;
 
     span {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .form-order__field-wrap-list {
+    width: 100%;
+    display: flex;
+
+    &--last {
+      padding-top: 35px;
+    }
+
+    legend {
+      width: 32%;
+    }
+  }
+
+  .form-order__info {
+
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
     }
   }
 }
 
 @media @desktop-widths {
 
+  .form-order {
+    padding-top: 130px;
+  }
+
   .form-order__desc {
     width: 700px;
-    padding: 110px 0 50px;
+    margin: 0 auto;
+    padding-bottom: 55px;
   }
 
   .form-order__fieldset-name {
@@ -253,7 +293,7 @@
   .form-order__fieldset-contact {
     display: flex;
     flex-wrap: wrap;
-    width: 83%;
+    width: 75%;
   }
   .form-order__field-legend {
     width: 17%;
@@ -268,5 +308,14 @@
 
   .form-order__field-form {
     width: 65%;
+  }
+
+  .form-order__field-wrap-list {
+    width: 83%;
+    display: flex;
+
+    legend {
+      width: 25%;
+    }
   }
 }
