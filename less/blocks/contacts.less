@@ -31,7 +31,16 @@
   margin: 0;
   .font-style(@font-size: 15px, @line-height: 30px, @font-weight: normal);
   text-decoration: none;
-  border-bottom: #8dd0bb solid 1px;
+  border-bottom: #79c0ad solid 1px;
+
+    &:hover {
+      color: #79c0ad;
+    }
+
+    &:active {
+      border-bottom-color: rgba(102, 204, 153, 0.1);
+      color: rgba(102, 204, 153, 0.1);
+    }
   }
 }
 
