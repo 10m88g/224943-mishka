@@ -44,10 +44,10 @@
   h2 {
     margin: 0;
     padding-bottom: 15px;
-    .font-style(@base-color: #000000);
   }
 
   a {
+    .font-style(@base-color: #000000);
     text-decoration: none;
   }
 }
@@ -62,7 +62,7 @@
   display: inline-block;
   vertical-align: middle;
   padding-top: 26px;
-  .font-style(@font-size: 15px);
+  .font-style(@font-size: 15px, @base-color: #000000);
 }
 
 @media @tablet-widths {
@@ -80,7 +80,19 @@
   }
 
   .catalog__item-content {
-    width: 50%
+    width: 50%;
+
+    a {
+      .font-style(@font-size: 20px);
+    }
+  }
+
+  .catalog__item-content-desc {
+    .font-style(@font-size: 15px, @font-weight: normal);
+  }
+
+  .catalog__item-content-price {
+    .font-style(@font-size: 17px, @base-color: #000000);
   }
 }
 

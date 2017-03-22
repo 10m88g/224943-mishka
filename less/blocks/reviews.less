@@ -37,7 +37,7 @@
 .reviews__items-contact {
   display: inline-block;
   vertical-align: middle;
-  .font-style(@line-height: 30px, @base-color: #464646, @font-weight: normal);
+  .font-style(@line-height: 30px, @font-weight: normal);
 }
 
 .reviews__items-btn {
@@ -90,13 +90,14 @@
 
   .reviews__items-auhor {
     display: block;
-    .font-style(@font-size: 17px);
+    .font-style(@font-size: 17px, @base-color: #000000);
     margin-top: 70px;
     margin-bottom: 20px;
   }
 
   .reviews__items-contact {
     display: block;
+    .font-style(@line-height: 30px, @font-weight: normal);
   }
   .reviews__write {
     position: absolute;
@@ -124,7 +125,7 @@
     background-repeat: no-repeat;
 
     h2 {
-      .font-style(@font-size: 43px, @line-height: 50px, @base-color: #000000);
+      .font-style(@font-size: 53px, @line-height: 57px);
       margin-left: 175px;
       padding-right: 330px;
     }

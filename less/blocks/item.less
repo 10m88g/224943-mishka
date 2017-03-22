@@ -16,7 +16,7 @@
   }
 
   span {
-    .font-style(@line-height: 20px, @base-color: #8dd0bb);
+    .font-style(@line-height: 20px, @base-color: @turquoise);
     text-transform: uppercase;
     padding-top: 5px;
   }
@@ -40,7 +40,7 @@
 
   p {
     margin: 0;
-    .font-style(@font-size: 15px, @font-weight: normal);
+    .font-style(@font-size: 15px, @line-height: 20px, @font-weight: normal);
   }
 }
 
@@ -96,22 +96,21 @@
   }
 
   .item__title {
-    display: inline-block;
+    display: flex;
 }
 
   .item__title h2 {
-    float: left;
-    width: 500px;
+    width: 85%;
     .font-style(@font-size: 43px, @line-height: 50px, @base-color: #000000);
   }
 
   .item__title  span {
-    float: right;
-    width: 167px;
-    .font-style(@line-height: 20px, @base-color: #8dd0bb);
+    .font-style(@line-height: 17px, @base-color: @turquoise);
     text-transform: uppercase;
-    padding-top: 5px;
+    text-align: center;
+
   }
+
   .item__desc-info {
     position: relative;
     display: flex;
@@ -119,13 +118,18 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-top: 50px;
   }
 
   .item__features {
     clear: both;
     width: 290px;
-    padding: 50px 0;
     order: 1;
+    padding: 0;
+
+    p {
+      .font-style(@font-size: 15px, @line-height: 30px, @font-weight: normal);
+    }
   }
 
   .item__desc {
@@ -146,6 +150,7 @@
   .item__price {
     order: 3;
     width: 290px;
+    .font-style(@font-size: 20px);
   }
 
   .item__button {
@@ -153,12 +158,8 @@
     width: 290px;
   }
 
-  .item__features p {
-    .font-style(@line-height: 30px, @font-weight: normal);
-  }
-
   .item__desc-content p {
-    .font-style(@line-height: 20px, @font-weight: normal);
+    .font-style(@font-size: 15px, @line-height: 20px, @font-weight: normal);
   }
 }
 
@@ -171,13 +172,15 @@
   }
 
   .item__title {
+    display: flex;
+    flex-direction: row-reverse;
     position: absolute;
     top: 120px;
     z-index: 1;
   }
 
   .item__title h2 {
-    float: right;
+
     width: 530px;
     .font-style(@font-size: 53px, @line-height: 57px, @base-color: #000000);
   }
@@ -185,9 +188,6 @@
   .item__title  span {
     float: left;
     width: 175px;
-    .font-style(@line-height: 17px, @base-color: #8dd0bb);
-    text-transform: uppercase;
-    padding-top: 5px;
   }
 
   .item__desc-info {
@@ -237,13 +237,5 @@
   .item__button {
     order: 4;
     width: 300px;
-  }
-
-  .item__features p {
-    .font-style(@line-height: 30px, @font-weight: normal);
-  }
-
-  .item__desc-content p {
-    .font-style(@line-height: 20px, @font-weight: normal);
   }
 }

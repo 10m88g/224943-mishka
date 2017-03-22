@@ -14,7 +14,7 @@
   h1 {
     padding-top: 50px;
     padding-bottom: 80px;
-    .font-style(@font-size: 27px, @line-height: 30px, @base-color: #050002);
+    .font-style(@font-size: 27px, @line-height: 30px, @base-color: #272425);
     text-align: center;
   }
 }
@@ -30,7 +30,7 @@
   margin-top: 0;
   margin-bottom: 0;
   width: 260px;
-  .font-style(@font-size: 15px);
+  .font-style(@font-size: 13px, @font-weight: normal);
 }
 
 
@@ -39,7 +39,7 @@
   .container__headline {
 
     h1 {
-      .font-style(@font-size: 43px, @line-height: 50px);
+      .font-style(@font-size: 43px, @line-height: 50px, @base-color: #000000);
     }
   }
 
@@ -53,13 +53,14 @@
 
   .container__form-desc-text {
     width: 668px;
+    .font-style(@font-size: 17px, @line-height: 30px, @font-weight: normal);
   }
 }
 
 @media @desktop-widths {
 
-  .container__headline {
-    .font-style(@font-size: 53px, @line-height: 57px);
+  .container__headline h1 {
+    .font-style(@font-size: 53px, @line-height: 57px, @base-color: #000000);
   }
 
   .container__form {
