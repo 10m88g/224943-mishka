@@ -17,14 +17,23 @@ img {
 }
 
 .style-btn {
+  width: 100%;
+  margin: 0 auto;
   font-size: 17px;
   line-height: 20px;
-  color: #464646;
+  color: @color-btn;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  width: 100%;
   border: 2px solid #464646;
-  margin: 0 auto;
+
+  &:hover {
+    background-color: @color-btn;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+  }
 }

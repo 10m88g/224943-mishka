@@ -2,12 +2,15 @@
 @import "../mixins.less";
 
 .menu-header {
-
-}
-
-.menu-header__headline {
   position: relative;
   width: 100%;
+  background-color: @bg-light-grey;
+  border-top: #e7e7e7 solid 1px;
+}
+.menu-header__headline {
+  width: 100%;
+  min-height: 280px;
+  margin: 0 auto;
   background-color: @bg-light-grey;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -15,30 +18,110 @@
   background-position-y: top;
 
   h1 {
+    width: 260px;
+    height: 220px;
     padding-top: 75px;
-    padding-bottom: 120px;
-    padding-right: 30px;
-    padding-left: 30px;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
     .font-style(@font-size: 27px, @line-height: 30px, @base-color: #050002);
   }
 }
 
 .menu-header__nav {
-
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-header__nav-link {
-  vertical-align: middle;
-  display: block;
-  padding: 28px 120px 28px 30px;
-  background-color: #8dd0bb;
+  height: 44px;
+  padding: 30px;
+  background-color: @turquoise;
   .font-style(@font-size: 19px, @base-color: #ffffff);
   text-align: left;
   text-decoration: none;
 
+  &:hover {
+    background-color: #8ad4bc;
+  }
+
+  &:active {
+    background-color: #8ad4bc;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--dark {
     background-color: #80c2b2;
+
+    &:hover {
+      background-color: #79c0ad;
+    }
+
+    &:active {
+      background-color: #79c0ad;
+    }
+  }
+}
+
+@media @tablet-widths {
+
+  .menu-header {
+    width: auto;
+  }
+
+  .menu-header__headline {
+  width: 100%;
+  background-color: @bg-light-grey;
+
+    h1 {
+      width: 668px;
+      height: 520px;
+      padding: 160px 0 0;
+      .font-style(@font-size: 43px, @line-height: 50px, @base-color: #000000);
+    }
+  }
+
+  .menu-header__nav {
+    width: 668px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .menu-header__nav-link {
+    display: block;
+    width: 334px;
+    height: 40px;
+    padding: 30px;
+
+    &:hover {
+    transform: translateY(-5px);
+  }
+  }
+}
+
+@media @desktop-widths {
+
+  .menu-header__headline {
+    width: 100%;
+  }
+
+  .menu-header__headline h1 {
+    padding-top: 160px;
+    margin: 0 auto;
+    width: 700px;
+    height: 520px;
+    .font-style(@font-size: 53px, @line-height: 57px, @base-color: #050002);
+  }
+
+  .menu-header__nav {
+    width: 1050px;
+  }
+
+  .menu-header__nav-link {
+    width: 525px;
+    height: 44px;
+    padding: 38px;
   }
 }
