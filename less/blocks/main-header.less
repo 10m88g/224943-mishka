@@ -8,10 +8,10 @@
 }
 
 .main-header__logo {
-  width: 87px;
+  width: 80px;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 
   img {
     text-align: center;
@@ -53,6 +53,7 @@
   justify-content: center;
   width: 100%;
 }
+
 .main-header__menu-nav,
 .main-header__user-nav {
   margin: 0;
@@ -73,8 +74,6 @@
   text-decoration: none;
   .font-style(@base-color: #000000);
 }
-
-
 
 @media @mobile-widths-only {
 
@@ -122,15 +121,18 @@
 @media @tablet-widths {
   .main-header {
     .w-container();
-    height: 40px;
+    min-height: 85px;
   }
 
   .main-header__container {
     margin: 0 auto;
     width: 100%;
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .main-header__promo-nav {
@@ -160,11 +162,12 @@
   .main-header__menu {
     width: 52%;
     margin: 0;
+    align-self: center;
   }
 
   .main-header__menu-nav {
     position: absolute;
-    bottom: -70px;
+    bottom: -45px;
     left: 0;
     z-index: 1;
     margin: 0;
@@ -179,26 +182,26 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 40px;
   }
 
   .main-header__menu-list {
     width: 167px;
-    height: 55px;
     border: none;
   }
 
   .main-header__user-list {
     border-top: none;
+    align-self: center;
 
     &--search {
-      width: 30%;
+      width: 23%;
+      min-height: 85px;
       border-right: 1px solid #ebebeb;
       border-left: 1px solid #ebebeb;
     }
 
     &--basket {
-      width: 70%;
+      width: 53%;
       padding-left: 50px;
     }
   }
@@ -220,7 +223,7 @@
 @media @desktop-widths {
   .main-header {
     .w-container();
-    height: 50px;
+    min-height: 90px;
   }
 
   .main-header__container {
@@ -255,6 +258,7 @@
     width: 87px;
     align-self: normal;
     left: 50%;
+    top: 30%;
     transform: translateX(-50%);
     z-index: 3;
   }
@@ -271,12 +275,30 @@
     flex-direction: row;
     bottom: 0;
     width: 70%;
+
   }
 
   .main-header__menu-list {
-    width: 167px;
-    height: 55px;
     border: none;
+
+    &--catalog {
+      width: 26%;
+      border-right: 1px solid #ebebeb;
+
+      a {
+        padding-top: 33px; padding-bottom: 33px;
+      }
+    }
+
+    &--knitting {
+      width: 30%;
+
+      a {
+        padding-top: 33px;
+        padding-bottom: 33px;
+        padding-left: 35px;
+      }
+    }
   }
 
   .main-header__nav {
@@ -291,6 +313,6 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    width: 30%;
+    width: 35%;
   }
 }

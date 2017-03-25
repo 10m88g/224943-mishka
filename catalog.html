@@ -16,8 +16,8 @@
           <button class="main-header__toggle" type="button">Открыть меню</button>
           <div class="main-header__nav">
             <ul class="main-header__menu-nav">
-              <li class="main-header__menu-list"><a>Каталог товаров</a></li>
-              <li class="main-header__menu-list"><a href="form.html">Вязание на заказ</a></li>
+              <li class="main-header__menu-list  main-header__menu-list--catalog"><a>Каталог товаров</a></li>
+              <li class="main-header__menu-list  main-header__menu-list--knitting"><a href="form.html">Вязание на заказ</a></li>
             </ul>
             <ul class="main-header__user-nav">
               <li class="main-header__user-list  main-header__user-list--search"><a href="#">Поиск по сайту</a></li>
@@ -69,16 +69,16 @@
             <div class="catalog__item-content">
               <h2><a href="#">Большая корзинка для игрушек</a></h2>
               <p class="catalog__item-content-desc">Диаметр 30 см, высота 30 см</p>
-              <span class="catalog__item-content-price">1 500 руб.</span>
+              <span class="catalog__item-content-price  catalog__item-content-price--large">1 500 руб.</span>
               <a href="#" class="catalog__item-content-backet"></a>
             </div>
           </div>
         </section>
         <section class="video">
           <div class="video__process-production">
-            <a class="video__process-link" href="#"><img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Видео процесс"></a> <!--видео и иконка плей-->
+            <a class="video__process-link" href="#"><img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Видео процесс"></a> <!--видео и иконка плей-->
             <div class="video__process-desc">
-              <h2 class="video__process-production-h2" >Процесс производства</h2>
+              <h2 class="video__process-production-h2">Процесс производства</h2>
               <p class="video__process-desc-text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
               <a class="video__process-btn-order  style-btn" href="#">Сделать заказ</a>
             </div>
@@ -89,19 +89,19 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo-wrapper">
-          <img class="page-footer__logo" src="img/logo-mobile.svg" width="87" height="37" alt="Mishka">
+          <a href="index.html"> <img class="page-footer__logo" src="img/logo-mobile.svg" width="87" height="37" alt="Mishka"></a>
         </div>
         <div class="page-footer__social">
           <ul class="page-footer__social-links">
-            <li><a class="social-link  social-link--inst" href="#">Мы в Инстаграмме</a></li>
-            <li><a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a></li>
-            <li><a class="social-link  social-link--tw" href="#">Мы в Твиттере</a></li>
+            <li class="social-link  social-link--inst"><a  href="#">Мы в Инстаграмме</a></li>
+            <li class="social-link  social-link--fb"><a  href="#">Мы в Фейсбуке</a></li>
+            <li class="social-link  social-link--tw"><a href="#">Мы в Твиттере</a></li>
           </ul>
         </div>
         <div class="page-footer__copyright">
           <span class="page-footer__copyright-title">Разработано:</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">
-          <img src="img/academy-logo.png" width="28" height="35" alt="Лого HTML-academy">HTML Academy</a>
+          <img src="img/htmlacademy.svg" width="28" height="35" alt="Лого HTML-academy">HTML Academy</a>
         </div>
       </div>
     </footer>

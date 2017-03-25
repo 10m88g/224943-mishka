@@ -1,7 +1,6 @@
 @import "../variable.less";
 @import "../mixins.less";
 
-
 .advantages {
   clear: both;
   width: 100%;
@@ -11,7 +10,7 @@
 .advantages__items {
   width: 260px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 40px 0;
 
   h2 {
     margin: 0;
@@ -20,15 +19,15 @@
 }
 
 .advantages__items-list {
-  .font-style(@line-height: 20px, @base-color: #000000);
   text-align: left;
   list-style-type: none;
   margin: 0;
   padding: 0;
 
   li {
-    margin-top: 30px;
+    margin-top: 33px;
     padding-top: 50px;
+    .font-style(@line-height: 20px, @base-color: #000000);
   }
 }
 
@@ -36,24 +35,22 @@
 
   .advantages__items {
     .w-container();
-    padding: 50px 0;
+    padding: 58px 0 57px;
 
     h2 {
       margin: 0;
+      padding-bottom: 30px;
       .font-style(@font-size: 43px, @line-height: 50px, @base-color: #000000);
     }
   }
 
   .advantages__items-list {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
     width: 668px;
-    .font-style(@font-size: 20px, @line-height: 22px);
 
     &--eco {
       order: 1;
@@ -81,27 +78,31 @@
   }
 
   .advantages__items-list li {
-    width: 49%;
-    margin-top: 30px;
-    padding-top: 60px;
+    width: 50%;
+    margin: 0;
+    padding-top: 75px;
+    padding-bottom: 35px;
+    .font-style(@font-size: 20px, @line-height: 22px, @base-color: #000000);
   }
 }
 
 @media @desktop-widths {
 
   .advantages__items {
+    width: 700px;
+    padding-top: 73px;
 
     h2 {
-      margin-left: 175px;
+      padding-bottom: 26px;
       .font-style(@font-size: 53px, @line-height: 57px, @base-color: #000000);
     }
   }
+
   .advantages__items-list {
-    margin-left: 175px;
-    width: 700px;
+    width: 100%;
   }
+
   .advantages__items-list li {
-    width: 49%;
-    margin-top: 40px;
+    width: 50%;
   }
 }

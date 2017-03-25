@@ -5,10 +5,16 @@
   font-weight: @font-weight;
 }
 
+.font-style-form(@font-size: 17px, @line-height: 18px, @base-color: #000000, @font-weight: bold) {
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @base-color;
+  font-weight: @font-weight;
+}
+
 .clearfix() {
   &::after {
     content: "";
-
     display: table;
     clear: both;
   }

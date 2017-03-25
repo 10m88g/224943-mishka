@@ -4,7 +4,6 @@
 .form-order {
   width: 260px;
   margin: 0 auto;
-  padding-top: 28px;
   padding-bottom: 50px;
 }
 
@@ -15,38 +14,40 @@
   margin: 0;
   padding: 0;
   text-align: left;
+  margin-top: 22px;
 }
 
 .form-order__field-wrap {
-  margin-bottom: 50px;
 }
 
 .form-order__fieldset-name {
-  .font-style(@line-height: 16px, @base-color: #8dd0bb);
+  .font-style(@line-height: 16px, @base-color: @turquoise);
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 
-  &::before { /*линия*/
+  &::after { /*линия*/
     position: absolute;
     content: "";
-    height: 1px;
-    width: 198px;
-    top: 2%;
-    right: 0;
-    background-color: @turquoise;
+    width: 74%;
+    border-top: 1px solid @turquoise;
+    margin-top: 10px;
+    margin-left: 23px;
   }
 }
 
-
 .form-order__fieldset-type {
   position: relative;
+  margin-top: 35px;
 
   input[type="radio"] + label::before { /*кружки*/
     position: absolute;
     content: "";
-    width: 41px;
-    height: 41px;
+    width: 34px;
+    height: 34px;
     left: 0;
-    top: 0;
+    top: -7px;
     border: 2px solid #464646;
     border-radius: 50%;
   }
@@ -57,8 +58,8 @@
     content: "";
     width: 16px;
     height: 16px;
-    left: 14px;
-    top: 14px;
+    left: 13px;
+    top: 3px;
     background-color: @turquoise;
     border-radius: 50%;
   }
@@ -66,11 +67,11 @@
 
 .form-order__label {
   position: relative;
-  .font-style(@line-height: 18px, @base-color: #000000, @font-weight: normal);
+  .font-style-form;
   padding-left: 60px;
   display: block;
   cursor: pointer;
-  margin: 30px 0;
+  margin-bottom: 23px;
 
   &:hover::before { /*не рабтает*/
     border: 2px solid @turquoise;
@@ -84,16 +85,16 @@
 .form-order__fieldset-color {
   position: relative;
   list-style-type: none;
-  margin:0;
+  margin: 35px 0 0 0;
   padding: 0;
 
   input[type="checkbox"] + label::before { /*квадраты у цветов*/
     position: absolute;
     content: "";
-    width: 41px;
-    height: 41px;
+    width: 35px;
+    height: 35px;
     left: 0;
-    top: -10px;
+    top: -8px;
     border: 2px solid #464646;
   }
 
@@ -102,12 +103,16 @@
     position: absolute;
     content: "";
     width: 28px;
-    height: 25px;
+    height: 28px;
     background-image: url(../img/icon-tick.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    left: 10px;
+    left: 3px;
     top: 0;
+  }
+
+  li:not(:last-child) {
+    padding-bottom: 20px;
   }
 }
 
@@ -115,27 +120,31 @@
   display: none;
 }
 
+.form-order__fieldset--style {
+  margin-top: 32px;
+}
+
 .form-order__fieldset-contact {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .form-order__label-contact {
   display: block;
   vertical-align: middle;
-  .font-style(@line-height: 18px, @base-color: #000000);
+  .font-style-form;
   padding-bottom: 15px;
   padding-top: 20px;
 }
 
 .form-order__field-contact {
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
   padding-left: 20px;
   border: none;
   outline: none;
   border-bottom: #000000 solid 2px;
-  .font-style(@line-height: 18px, @font-weight: normal);
+  .font-style-form(@font-weight: normal);
   color: rgba(70, 70, 70, 0.3);
 
   &:hover {
@@ -150,30 +159,30 @@
 }
 
 .form-order__field-form {
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .form-order__field-wrap-list {
 
   &--last {
-    padding-top: 20px;
+    padding-top: 32px;
   }
 }
 
 .form-order__info {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .form-order__info-input {
-  width: 100%;
-  margin-top: 20px;
-  padding-bottom: 10px;
+  width: 92%;
+  margin-top: 24px;
+  padding-bottom: 14px;
   padding-left: 20px;
   border: none;
   outline: none;
   border-bottom: #000000 solid 2px;
-  .font-style(@line-height: 18px, @font-weight: normal);
-
+  .font-style-form(@font-weight: normal);
+  color: rgba(70, 70, 70, 0.3);
 
   &:hover {
     border-bottom: #79c0ad solid 2px;
@@ -190,9 +199,10 @@
 
   textarea {
     width: 230px;
+    height: 110px;
     padding: 15px;
     outline: none;
-    .font-style (@line-height: 18px, @base-color: #000000, @font-weight: normal);
+    .font-style-form(@base-color: #464646, @font-weight: normal);
     font-family: "Open Sans", "Arial", sans-serif;
     border: #000000 solid 2px;
 
@@ -217,7 +227,7 @@
     margin: 0 auto;
     display: inline-block;
     vertical-align: middle;
-    padding: 14px 0;
+    padding: 13px 0;
     background-color: @bg-white;
     cursor: pointer;
   }
@@ -236,69 +246,127 @@
   .form-order {
     width: 100%;
     position: relative;
-    padding-top: 70px;
+    padding-top: 60px;
   }
 
   .form-order__bg {
     background-color: @bg-light-grey;
+
+    .form-order__fieldset-name {
+      padding-top: 68px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .form-order__white {
+
+     .form-order__field-wrap {
+      padding-top: 37px;
+      margin-bottom: 48px;
+    }
+
+    .form-order__fieldset-name {
+      padding-top: 27px;
+    }
+  }
+
+  .form-order__fieldset {
+    margin-top: 0;
+
+    &--style {
+      padding-bottom: 40px;
+    }
   }
 
   .form-order__field-wrap {
     .w-container();
-    padding: 60px 0;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 8px;
   }
 
   .form-order__fieldset-name {
     display: flex;
     width: 25%;
-    padding-top: 15px;
+    padding-top: 14px;
+    margin-bottom: 7px;
 
-    &::before { /*линия*/
+    &::after { /*линия*/
       display: none;
     }
-  }
-
-  .form-order__field-legend legend {
-    width: 100%;
-    padding: 15px 0;
   }
 
   .form-order__fieldset-type {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    padding-top: 10px;
+    margin: 0;
 
     input[type="radio"] + label::before { /*кружки*/
       left: 0;
-      top: -12px;
+      top: -15px;
+      height: 47px;
+      width: 47px;
     }
 
     input[type="radio"]:checked + label::after { /*точки*/
       top: 3px;
+      height: 20px;
+      width: 20px;
     }
+  }
+
+   .form-order__label {
+      margin-bottom: 60px;
+      padding-left: 80px;
+  }
+
+  .form-order__label,
+  .form-order__label-contact {
+    .font-style-form(@font-size: 19px);
   }
 
   .form-order__fieldset-color {
     display: flex;
     flex-wrap: wrap;
-    width: 65%;
+    width: 75%;
+    padding-top: 65px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    input[type="checkbox"] + label::before { /*квадраты у цветов*/
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      left: 2px;
+    }
+
+    input[type="checkbox"] + label::after { /*галки у цветов*/
+      position: absolute;
+      top: 7px;
+      left: 12px;
+      width: 30px;
+    }
   }
 
   .form-order__fieldset-color:nth-child(1+2n) li {
-    width: 50%
+    width: 50%;
+    margin-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .form-order__fieldset-color:nth-child(2n) li {
-    width: 50%
+    width: 50%;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .form-order__fieldset-contact {
     display: flex;
     flex-wrap: wrap;
     width: 75%;
+    margin-top: 27px;
   }
 
   .form-order__field-legend {
@@ -306,10 +374,23 @@
   }
 
   .form-order__label-contact {
-    width: 30%;
+    width: 25%;
+    padding-bottom: 19px;
+    padding-top: 0;
   }
   .form-order__field-contact {
-    width: 69%;
+    width: 70%;
+    padding-top: 35px;
+    .font-style-form(@font-size: 19px, @line-height: 18px, @font-weight: normal);
+    color: rgba(70, 70, 70, 0.3);
+
+    &--first {
+      padding-top: 0;
+    }
+  }
+
+  .form-order__fieldset-contact label:not(:first-child)  {
+    padding-top: 40px;
   }
 
   .form-order__field-form {
@@ -318,6 +399,8 @@
 
   .form-order__info-input {
     background-color: @bg-light-grey;
+    .font-style-form(@font-size: 19px, @line-height: 18px, @font-weight: normal);
+    color: rgba(70, 70, 70, 0.3);
   }
 
   .form-order__submit {
@@ -326,39 +409,65 @@
     margin-top: 0;
     text-align: left;
 
+    .form-order__submit-btn {
+      width: 35%;
+    }
+
     span {
       position: absolute;
-      bottom: 0;
+      bottom: -13px;;
       right: 0;
+      .font-style(@font-size: 17px, @line-height: 30px, @font-weight: normal);
     }
+  }
+
+  .form-order__info-input {
+    margin-top: 67px;
   }
 
   .form-order__field-wrap-list {
     width: 100%;
     display: flex;
 
-    &--last {
-      padding-top: 35px;
-    }
-
     legend {
       width: 32%;
+      padding-top: 50px;
+    }
+
+    &--last {
+      padding-top: 40px;
+
+      .form-order__fieldset-name {
+        padding-top: 0px;
+      }
+      .form-order__info-input {
+        margin-top: 0;
+      }
     }
   }
 
   .form-order__info {
+    margin-top: 27px;
+    margin-bottom: 55px;
+
+    .form-order__fieldset-name {
+      padding-top: 42px;
+    }
 
     textarea {
       width: 100%;
+      height: 142px;
       box-sizing: border-box;
+      .font-style-form(@base-color: #464646, @font-weight: normal);
     }
+
   }
 }
 
 @media @desktop-widths {
 
   .form-order {
-    padding-top: 130px;
+    padding-top: 60px;
   }
 
   .form-order__fieldset-name {
@@ -369,7 +478,7 @@
   .form-order__fieldset-type {
     display: flex;
     flex-wrap: wrap;
-    width: 83%;
+    width: 50%;
   }
 
   .form-order__fieldset-color {
@@ -388,9 +497,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 75%;
-  }
-  .form-order__field-legend {
-    width: 17%;
   }
 
   .form-order__label-contact {
@@ -411,5 +517,13 @@
     legend {
       width: 25%;
     }
+  }
+
+  .form-order__info {
+    margin-bottom: 50px;
+  }
+
+  .form-order__submit {
+    width: 700px;
   }
 }

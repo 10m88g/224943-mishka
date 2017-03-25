@@ -15,7 +15,7 @@
 .menu-promo__nav-sale a,
 .menu-promo__nav-delivery {
   text-decoration: none;
-  .font-style(@font-size:15px);
+  .font-style(@font-size:15px, @font-weight: normal);
 }
 
 @media @tablet-widths {
@@ -30,7 +30,7 @@
   .menu-promo__nav {
     width: 100%;
     text-align: right;
-    margin-top: 14px;
+    margin-top: 18px;
   }
 
   .menu-promo__nav-new,
@@ -56,8 +56,19 @@
   .menu-promo__nav-sale {
     display: flex;
     flex-direction: row;
-    width: 20%;
-    .font-style(@font-size:15px);
+    width: 21%;
+
+    a {
+      .font-style(@font-size: 15px, @font-weight: bold);
+
+      &:hover {
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
   }
 
   .menu-promo__nav-delivery {
