@@ -72,9 +72,15 @@
   display: block;
   cursor: pointer;
   margin-bottom: 23px;
+}
 
-  &:hover::before { /*не рабтает*/
+.form-order__fieldset-type {
+  .form-order__label:hover::before { /*состояние больших кругов*/
     border: 2px solid @turquoise;
+  }
+
+  .form-order__label:active::before {
+    border: 2px solid rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -113,6 +119,16 @@
 
   li:not(:last-child) {
     padding-bottom: 20px;
+  }
+}
+
+.form-order__fieldset-color {
+  .form-order__label:hover::before { /*состояние у галочек*/
+    border: 2px solid @turquoise;
+  }
+
+  .form-order__label:active::before {
+    border: 2px solid rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -463,7 +479,7 @@
   }
 
   @-moz-document url-prefix() {  /*отступ для мозиллы*/
-   .form-order__submit {
+    .form-order__submit {
       margin-top: 55px;
     }
   }

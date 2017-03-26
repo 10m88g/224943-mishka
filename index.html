@@ -99,7 +99,7 @@
             <span class="reviews__items-auhor">Анастасия Красильникова</span>
             <span class="reviews__items-contact">@misssssiskras</span>
           </blockquote>
-          <div class="reviews__items-btn  style-btn">
+          <div class="reviews__items-btn">
             <a class="reviews__btn reviews__btn--prev" href="#"><img src="img/icon-left-arrow.svg" alt="Предыдущий отзыв" width="50" height="26"></a>
             <a class="reviews__btn reviews__btn--next" href="#"><img src="img/icon-right-arrow.svg" alt="Следующий отзыв" width="50" height="26"></a>
           </div>
@@ -110,6 +110,7 @@
         <div class="contacts__wrapper">
           <div class="contacts__info">
             <h2>Контакты</h2>
+            <img class="contacts__flag" alt="Флажок" height="81" width="46" src="img/icon-flag.svg">
             <div class="contacts__info-list">
               <p class="contacts__list-title">e-mail:</p>
               <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
@@ -145,6 +146,22 @@
         </div>
       </div>
     </footer>
-    <script src="js/scripts.js"></script>
+    <div class="modal">
+      <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <span>Выберите размер:</span>
+        <div class="modal__size">
+          <a href=""><img src""></a>
+          <a href=""><img src""></a>
+          <a href=""><img src""></a>
+        </div>
+        <div class="modal__submit">
+          <button type="submit" class="modal__submit-btn" value="Добавить">Добавить</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script-modal.js"></script>
+    <script src="js/script-toggle.js"></script>
   </body>
 </html>

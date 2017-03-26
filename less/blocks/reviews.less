@@ -46,14 +46,21 @@
 .reviews__items-btn {
   margin-bottom: 40px;
   padding: 10px 0px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  margin-bottom: 35px;
 
-  &:hover {
-    background-color: @bg-white;
-    color: #ffffff;
-  }
+  a {
 
-  &:active {
-    background-color: @bg-white;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -63,7 +70,6 @@
     margin-right: 80px;
   }
 }
-
 
 .reviews__write {
   width: 98%;
@@ -126,9 +132,10 @@
 
   .reviews__items-btn {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     right: 0;
     width: 170px;
+    border: none;
   }
 
   .reviews__btn {

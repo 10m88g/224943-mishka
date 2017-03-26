@@ -50,15 +50,17 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: 0;
   }
 
   .menu-promo__nav-new,
   .menu-promo__nav-sale {
     display: flex;
     flex-direction: row;
-    width: 21%;
+    width: 17%;
 
     a {
+      padding: 15px 0;
       .font-style(@font-size: 15px, @font-weight: bold);
 
       &:hover {
@@ -70,9 +72,13 @@
       }
     }
   }
+  .menu-promo__nav-sale {
+    padding-left: 39px;
+  }
 
   .menu-promo__nav-delivery {
     text-align: right;
     width: 60%;
+    padding-top: 15px;
   }
 }
