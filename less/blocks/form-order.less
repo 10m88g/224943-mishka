@@ -58,8 +58,8 @@
     content: "";
     width: 16px;
     height: 16px;
-    left: 13px;
-    top: 3px;
+    left: 11px;
+    top: 4px;
     background-color: @turquoise;
     border-radius: 50%;
   }
@@ -107,7 +107,7 @@
     background-image: url(../img/icon-tick.svg);
     background-color: transparent;
     background-repeat: no-repeat;
-    left: 3px;
+    left: 4px;
     top: 0;
   }
 
@@ -226,6 +226,7 @@
 
   button {
     .font-style;
+    font-family: inherit;
     width: 260px;
     margin: 0 auto;
     display: inline-block;
@@ -269,7 +270,7 @@
   .form-order__white {
 
     .form-order__field-wrap {
-      padding-top: 37px;
+      padding-top: 42px;
       margin-bottom: 48px;
     }
 
@@ -311,7 +312,8 @@
     }
 
     input[type="radio"]:checked + label::after { /*точки*/
-      top: 3px;
+      left: 15px;
+      top: 1px;
       height: 20px;
       width: 20px;
     }
@@ -331,7 +333,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 75%;
-    padding-top: 65px;
+    padding-top: 60px;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -342,11 +344,9 @@
       left: 2px;
     }
 
-    input[type="checkbox"] + label::after { /*галки у цветов*/
-      position: absolute;
-      top: 7px;
-      left: 12px;
-      width: 30px;
+    input[type="checkbox"]:checked + label::after { /*галки у цветов*/
+      left: 13px;
+      top: 4px;
     }
   }
 
@@ -375,7 +375,7 @@
 
   .form-order__label-contact {
     width: 25%;
-    padding-bottom: 19px;
+    padding-bottom: 17px;
     padding-top: 0;
   }
 
@@ -396,6 +396,7 @@
   }
 
   .form-order__field-wrap-double {
+    box-sizing: border-box;
     .w-container();
     padding-bottom: 50px;
   }
@@ -408,12 +409,13 @@
 
     .form-order__fieldset-name {
       width: 25%;
+      padding-bottom: 20px;
     }
 
     .form-order__info-input {
       width: 72%;
       padding-top: 68px;
-      padding-bottom: 15px;
+      padding-bottom: 12px;
       padding-left: 14px;
     }
   }
@@ -443,8 +445,9 @@
 
   .form-order__submit {
     .w-container();
+
     position: relative;
-    margin-top: 0;
+    margin-top: 45px;
     text-align: left;
 
     .form-order__submit-btn {
@@ -459,9 +462,15 @@
     }
   }
 
+  @-moz-document url-prefix() {  /*отступ для мозиллы*/
+   .form-order__submit {
+      margin-top: 55px;
+    }
+  }
+
   .form-order__info {
-    margin-top: 27px;
-    margin-bottom: 55px;
+    margin-top: 25px;
+    margin-bottom: 0;
 
     .form-order__fieldset-name {
       padding-top: 42px;
@@ -482,9 +491,12 @@
     padding-top: 60px;
   }
 
+  .form-order__field-wrap {
+    width: 920px;
+  }
+
   .form-order__fieldset-name {
-    justify-content: center;
-    width: 16%;
+    width: 11%;
   }
 
   .form-order__fieldset-type {
@@ -498,16 +510,23 @@
   .form-order__fieldset-color {
     display: flex;
     flex-wrap: wrap;
-    width: 83%;
+    width: 87%;
     padding-left: 8px;
   }
 
+  .form-order__bg {
+
+    .form-order__fieldset-color {
+      padding-top: 63px;
+    }
+  }
+
   .form-order__fieldset-color:nth-child(-n+3) li {
-    width: 30%
+    width: 33%
   }
 
   .form-order__fieldset-color:nth-child(n+4) li {
-    width: 30%
+    width: 33%
   }
 
   .form-order__fieldset-color input[type="checkbox"] + label::before {
@@ -522,13 +541,22 @@
   .form-order__white {
     .form-order__field-wrap {
       margin-bottom: 53px;
+      padding-top: 39px;
+
+      @-moz-document url-prefix() {  /*отступ для мозиллы*/
+        padding-top: 45px;
+      }
+
+      .form-order__fieldset-contact {
+        margin-top: 24px;
+      }
     }
   }
 
   .form-order__fieldset-contact {
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
+    width: 86%;
     padding-left: 8px;
   }
 
@@ -541,38 +569,47 @@
     width: 70%;
   }
 
+  .form-order__field-wrap-double {
+    width: 920px;
+
+    .form-order__fieldset-name {
+      padding-bottom: 17px;
+    }
+  }
+
   .form-order__field-wrap-list {
 
     .form-order__fieldset-name {
-      width: 15%;
+      width: 12%;
     }
 
     .form-order__info-input {
-      width: 65%;
-      margin-left: 17px;
+      width: 76%;
+      padding-bottom: 10px;
     }
   }
 
   .form-order__field-style {
     margin-top: 0;
-
-    .form-order__fieldset-name {
-      padding-left: 22px;
-    }
   }
 
   .form-order__field-form {
-    width: 67%;
+    width: 76%;
     padding-left: 7px;
   }
 
   .form-order__info {
     margin-top: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
+
+    @-moz-document url-prefix() {  /*отступ для мозиллы*/
+        margin-bottom: 52px;
+      }
   }
 
   .form-order__submit {
     width: 700px;
+    margin-top: 0px;
 
     .form-order__submit-btn {
       width: 33%;
