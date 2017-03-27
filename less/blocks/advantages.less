@@ -10,7 +10,7 @@
 .advantages__items {
   width: 260px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 0 10px 0;
 
   h2 {
     margin: 0;
@@ -19,14 +19,19 @@
 }
 
 .advantages__items-list {
+  display: flex;
+  flex-direction: column;
   text-align: left;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-top: 30px;
 
   li {
-    margin-top: 33px;
-    padding-top: 50px;
+    margin: 0;
+    padding-bottom: 30px;
+
+    padding-top: 53px;
     .font-style(@line-height: 20px, @base-color: #000000);
   }
 }
@@ -47,6 +52,7 @@
   .advantages__items-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -80,7 +86,7 @@
   .advantages__items-list li {
     width: 50%;
     margin: 0;
-    padding-top: 75px;
+    padding-top: 74px;
     padding-bottom: 35px;
     .font-style(@font-size: 20px, @line-height: 22px, @base-color: #000000);
   }
@@ -91,7 +97,7 @@
   .advantages__items {
     width: 700px;
     padding-top: 73px;
-    padding-bottom: 55px;
+    padding-bottom: 60px;
 
     h2 {
       padding-bottom: 26px;
