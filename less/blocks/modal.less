@@ -1,7 +1,6 @@
 @import "../variable.less";
 @import "../mixins.less";
 
-
 @keyframes bounce {
   0%   {
     transform: translateY(-2000px);
@@ -17,21 +16,21 @@
   }
 }
 
-.modal__show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
 .modal {
-  /*display: none;*/
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 20%;
   left: 0;
+  z-index: 15;
   width: 100%;
   background: @bg-white;
   margin: 0 auto;
   box-shadow: 0 5px 8px 0 rgba(122,122,122,0.3);
   border: 1px solid #c6c6c6;
+}
+.modal__show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .modal__wrapper {
@@ -86,6 +85,7 @@
     padding: 15px 20px;
     text-decoration: none;
     .font-style(@line-height: 16px);
+    cursor: pointer;
   }
 }
 
@@ -109,8 +109,8 @@
 
 .modal__close {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
   width: 22px;
   height: 22px;
   font-size: 0;
@@ -123,8 +123,8 @@
 .modal__close::after {
   content: "";
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: 10px;
+  right: 0;
   width: 21px;
   height: 3px;
   background-color: #d0d0d0;
