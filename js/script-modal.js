@@ -1,7 +1,7 @@
 
 var layer = document.querySelector(".item__button-overlay");
 var overlay = document.querySelector(".overlay");
-var close = overlay.querySelector(".modal__close");
+var closing = overlay.querySelector(".modal__closing");
 
 layer.addEventListener("click", function(event) {
   event.preventDefault();
