@@ -2,14 +2,16 @@
 @import "../mixins.less";
 
 .reviews {
+  position: relative;
   width: 100%;
   margin: 0 auto;
 }
 
 .reviews__items {
+
   width: 260px;
   margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 15px;
   padding-bottom: 45px;
 
   h2 {
@@ -81,9 +83,13 @@
 @media @tablet-widths {
 
   .reviews {
-    background-image: url(../img/review@1x.jpg);
+    background-image: url("../img/img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px auto;
 
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/img/review@2x.jpg");
+    }
   }
 
   .reviews__items {
@@ -153,11 +159,16 @@
   }
 
   .reviews__items {
-    background: url(../img/review@1x.jpg);
+    background-image: url("../img/img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px auto;
     padding-top: 70px;
-    padding-bottom: 97px;
-    margin-bottom: 80px;
+    padding-bottom: 95px;
+    margin-bottom: 65px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/img/review@2x.jpg");
+    }
 
     h2 {
       .font-style(@font-size: 53px, @line-height: 57px, @base-color: #000000);

@@ -20,6 +20,14 @@
   a {
     text-decoration: none;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-header__menu {
@@ -85,12 +93,16 @@
 
   a {
     &:hover {
-        color: rgba(0, 0, 0, 0.6);
-      }
+      color: rgba(0, 0, 0, 0.6);
+    }
 
     &:active {
       color: rgba(0, 0, 0, 0.3);
     }
+  }
+
+  &--basket {
+    border-bottom: 1px solid #ebebeb;
   }
 }
 
@@ -98,13 +110,34 @@
 .main-header__user-list a {
   display: flex;
   text-align: left;
-  padding: 30px 30px 30px 75px;
+  padding: 27px 30px 27px 75px;
   text-decoration: none;
   .font-style(@base-color: #000000);
 }
 
+.main-header__user-list--search,
 .main-header__user-list--basket {
+  position: relative;
 
+  svg {
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    opacity: 0.2;
+
+    &:hover {
+      fill: @turquoise;
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-header__user-list--basket svg {
+  top: 17px;
 }
 
 
@@ -135,7 +168,6 @@
     top: 0;
     right: 0;
     z-index: 10;
-    height: 50vh;
   }
 
   .main-header__nav--nojs .main-header__toggle {  /*нет js*/
@@ -151,6 +183,10 @@
   .main-header__nav--nojs .main-header__user-list {
     display: block;
   }
+
+  .main-header__user-list--basket svg {
+  top: 27px;
+}
 }
 
 @media @tablet-widths {
@@ -192,6 +228,11 @@
     margin: 0;
     padding: 0;
     align-self: center;
+
+    img {
+      width: 112px;
+      height: auto;
+    }
   }
 
   .main-header__menu {
@@ -237,6 +278,7 @@
     &--basket {
       width: 78%;
       align-self: center;
+      border-bottom: none;
     }
   }
 
@@ -258,7 +300,6 @@
 @media @desktop-widths {
   .main-header {
     .w-container();
-
   }
 
   .main-header__container {
@@ -290,12 +331,17 @@
 
   .main-header__logo {
     position: absolute;
-    width: 87px;
+    width: 15%;
     align-self: normal;
     left: 50%;
-    top: 30%;
+    top: 10%;
     transform: translateX(-50%);
     z-index: 3;
+
+    img {
+    width: 617px;
+    height: auto;
+    }
   }
 
   .main-header__menu {
@@ -314,6 +360,8 @@
 
   .main-header__menu-list {
     border: none;
+    align-self: center;
+
 
     &--catalog {
       width: 26%;
