@@ -20,14 +20,17 @@
 
 .page-footer__social {
   width: 100%;
-  padding-top: 5px;
+  margin-top: 5px;
   border-bottom: #e4e4e4 solid 1px;
 }
 
 .page-footer__social-links {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
+  justify-content: center;
   padding-left: 0;
+  margin-bottom: 40px;
   padding-bottom: 40px;
   margin: 0 auto;
   width: 65%;
@@ -45,19 +48,56 @@
 .social-link {
   position: relative;
 
-  svg {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    fill: #000000;
+  &--inst {
+    svg {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      fill: #000000;
 
-    &:hover {
-      fill: @turquoise;
+      &:hover {
+        fill: @turquoise;
+      }
+      &:active {
+        fill: @turquoise;
+        fill-opacity: 0.3;
+      }
     }
+  }
 
-    &:active {
-      fill: @turquoise;
-      fill-opacity: 0.3;
+  &--fb {
+    svg {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      fill: #000000;
+
+      &:hover {
+        fill: @turquoise;
+      }
+
+      &:active {
+        fill: @turquoise;
+        fill-opacity: 0.3;
+      }
+    }
+  }
+
+  &--tw {
+    svg {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      fill: #000000;
+
+      &:hover {
+        fill: @turquoise;
+      }
+
+      &:active {
+        fill: @turquoise;
+        fill-opacity: 0.3;
+      }
     }
   }
 }
@@ -66,8 +106,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
   align-items: center;
-  padding-top: 8px;
+  margin-top: 8px;
   cursor: pointer;
 
   a {
@@ -92,6 +133,7 @@
 .page-footer__copyright-link {
   width: 20%;
   padding-top: 13px;
+
 }
 
 .page-footer__logo-academy {
@@ -112,8 +154,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
-    padding: 48px 0 30px;
+    padding: 32px 0 30px;
   }
 
   .page-footer__logo-wrapper {
@@ -141,8 +184,10 @@
 
   .page-footer__social {
     display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    text-align: center;
     width: 40%;
-    padding-top: 10px;
     border-bottom: none;
   }
 
@@ -154,17 +199,18 @@
   }
 
   .page-footer__copyright {
+    margin-top: 30px;
     align-items: flex-start;
     width: 36%;
   }
 
   .page-footer__copyright-title {
     width: 80%;
-    padding-top: 10px;
   }
 
   .page-footer__copyright-link {
     width: 0;
+    padding-top: 0;
   }
 }
 
@@ -173,8 +219,6 @@
   .page-footer__wrapper {
     justify-content: space-between;
     width: 78%;
-    align-items: stretch;
-    padding: 50px 0 30px;
   }
 
   .page-footer__logo-wrapper {
