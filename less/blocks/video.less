@@ -2,9 +2,9 @@
 @import "../mixins.less";
 
 .video {
+  display: flex;
   width: 260px;
   margin: 0 auto;
-  display: flex;
   margin-bottom: 60px;
 }
 
@@ -31,9 +31,6 @@
   }
 }
 
-.video__process-desc {
-}
-
 .video__process-production-h2 {
   position: absolute;
   top: 0;
@@ -56,14 +53,14 @@
 }
 
 .video__process-icon {
-  background-image: url(../img/icon-play.svg);
-  background-repeat: no-repeat;
-  cursor: pointer;
+  position: absolute;
   height: 77px;
   width: 101px;
   left: 32%;
-  position: absolute;
   top: 27%;
+  background-image: url(../img/icon-play.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
   z-index: 2;
 
   &:hover {
@@ -85,9 +82,9 @@
 
 .video__process-btn-order {
   display: block;
-  padding: 14px 0;
-  margin-top: 25px;
   width: 98%;
+  margin-top: 25px;
+  padding: 14px 0;
 }
 
 @media @tablet-widths {
@@ -99,8 +96,8 @@
   .video__process-production {
     width: 100%;
     flex-direction: column;
-    padding-bottom: 45px;
     margin-bottom: 60px;
+    padding-bottom: 45px;
   }
 
   .video__process-production-h2 {
@@ -151,14 +148,14 @@
   .video__process-production {
     position: relative;
     display: flex;
-    width: 100%;
-    padding-bottom: 0;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    box-sizing: border-box;
+    width: 100%;
     margin-bottom: 100px;
+    padding-bottom: 0;
+    box-sizing: border-box;
   }
 
   .video__process-link {
@@ -173,15 +170,15 @@
 
   .video__process-desc {
     order: 3;
+    width: 35%;
     box-sizing: border-box;
     padding: 0;
-    width: 35%;
   }
 
   .video__process-production-h2 {
     order: 2;
-    padding: 93px 0 33px 75px;
     width: 41%;
+    padding: 93px 0 33px 75px;
   }
 
   .video__process-production-h2 svg {
@@ -196,7 +193,7 @@
   }
 
   .video__process-btn-order {
-    margin: 45px 0 57px 81px;
     width: 62%;
+    margin: 45px 0 57px 81px;
   }
 }

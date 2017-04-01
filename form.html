@@ -86,7 +86,7 @@
         <form class="form-order">
           <fieldset class="form-order__fieldset">
             <div class="form-order__field-wrap">
-              <legend class="form-order__fieldset-name">Тип</legend>
+              <div class="form-order__fieldset-name">Тип</div>
               <div class="form-order__fieldset-type">
                   <input class="form-order__field " id="accessory" type="radio" name="radio-type" checked/>
                   <label class="form-order__label" for="accessory" >Аксессуар для интерьера</label>
@@ -97,7 +97,7 @@
           </fieldset>
           <fieldset class="form-order__fieldset  form-order__bg">
             <div class="form-order__field-wrap">
-              <legend class="form-order__fieldset-name">Цвет</legend>
+              <div class="form-order__fieldset-name">Цвет</div>
               <ul class="form-order__fieldset-color">
                 <li>
                   <input class="form-order__field-color" id="color-white" type="checkbox" name="checkbox-color" checked/>
@@ -122,7 +122,7 @@
           </fieldset>
           <fieldset class="form-order__fieldset  form-order__white">
             <div class="form-order__field-wrap">
-              <legend class="form-order__fieldset-name">ФИО</legend>
+              <div class="form-order__fieldset-name">ФИО</div>
               <div class="form-order__fieldset-contact">
                 <label class="form-order__label-contact" for="first-name">Имя:</label>
                 <input class="form-order__field-contact  form-order__field-contact--first" id="first-name" type="text" placeholder="Введите ваше имя*">
@@ -136,12 +136,12 @@
           <fieldset class="form-order__fieldset  form-order__bg">
             <div class="form-order__field-wrap-double">
               <div class="form-order__field-wrap-list">
-                <legend class="form-order__fieldset-name">Тел</legend>
+                <div class="form-order__fieldset-name">Тел</div>
                 <input class="form-order__info-input" id="phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*">
                 <svg width="24.829px" height="24.333px"><use xlink:href="#icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"></use></svg>
               </div>
               <div class="form-order__field-wrap-list  form-order__field-style">
-                <legend class="form-order__fieldset-name">E-mail</legend>
+                <div class="form-order__fieldset-name">E-mail</div>
                 <input class="form-order__info-input" id="email" type="email" placeholder="Ваш Email*">
                 <svg width="32px" height="32px"><use xlink:href="#icon-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"></use></svg>
               </div>
@@ -149,7 +149,7 @@
           </fieldset>
           <fieldset class="form-order__fieldset">
             <div class="form-order__field-wrap  form-order__info">
-              <legend class="form-order__fieldset-name">Доп</legend>
+              <div class="form-order__fieldset-name">Доп</div>
               <div class="form-order__field-form">
                 <textarea id="text" name="fieldset-add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
@@ -165,7 +165,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo-wrapper">
-          <a class="page-footer__logo" href="index.html"><svg width="101.615px" height="34.056px"><use xlink:href="#logo-footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"xml:space="preserve"></use></svg></a>
+          <a class="page-footer__logo" href="index.html"><svg width="101.615px" height="34.056px"><use xlink:href="#logo-footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"></use></svg></a>
         </div>
         <div class="page-footer__social">
           <ul class="page-footer__social-links">
@@ -190,5 +190,6 @@
     </footer>
     <script src="js/script-modal.js"></script>
     <script src="js/script-toggle.js"></script>
+    <script src="http://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
   </body>
 </html>

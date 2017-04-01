@@ -142,7 +142,6 @@
   left: 13%;
 }
 
-
 @media @mobile-widths-only {
 
   .main-header__menu {
@@ -165,23 +164,26 @@
   }
 
   .main-header__nav--opened .main-header__nav {
-    background-color: #ffffff;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 10;
+    background-color: #ffffff;
   }
 
   .main-header__nav--nojs .main-header__toggle {  /*нет js*/
     display: none;
   }
+
   .main-header__nav--nojs .main-header__nav {
     position: static;
     height: auto;
   }
+
   .main-header__nav--nojs .main-header__menu-list {
     display: block;
   }
+
   .main-header__nav--nojs .main-header__user-list {
     display: block;
   }
@@ -203,30 +205,27 @@
   }
 
   .main-header__container {
-    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 0 auto;
   }
 
   .main-header__promo-nav {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    text-align: right;
     flex-direction: row-reverse;
     margin-top: 14px;
+    width: 100%;
+    text-align: right;
   }
 
   .main-header__promo-new,
   .main-header__promo-sale {
     display: none;
-  }
-
-  .main-header__promo-delivery {
   }
 
   .main-header__logo {
@@ -252,17 +251,17 @@
     bottom: -55px;
     left: 0;
     z-index: 1;
-    margin: 0;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    margin: 0;
   }
 
   .main-header__user-nav {
-    margin: 0;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    margin: 0;
   }
 
   .main-header__menu-list {
@@ -271,8 +270,8 @@
   }
 
   .main-header__user-list {
-    border-top: none;
     align-self: center;
+    border-top: none;
 
     &--search {
       width: 23%;
@@ -309,11 +308,11 @@
   }
 
   .main-header__container {
-    margin: 0 auto;
-    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .main-header__promo-nav {
@@ -331,22 +330,22 @@
   }
 
   .main-header__promo-delivery {
-    text-align: right;
     width: 60%;
+    text-align: right;
   }
 
   .main-header__logo {
     position: absolute;
-    width: 15%;
-    align-self: normal;
     left: 50%;
     top: 10%;
+    width: 15%;
+    align-self: normal;
     transform: translateX(-50%);
     z-index: 3;
 
     img {
-    width: 617px;
-    height: auto;
+      width: 617px;
+      height: auto;
     }
   }
 
@@ -365,9 +364,8 @@
   }
 
   .main-header__menu-list {
-    border: none;
     align-self: center;
-
+    border: none;
 
     &--catalog {
       width: 26%;
@@ -397,11 +395,11 @@
   }
 
   .main-header__user-nav {
-    margin: 0;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     width: 35%;
+    margin: 0;
   }
 }
