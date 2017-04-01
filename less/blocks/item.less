@@ -5,15 +5,15 @@
 .item {
   width: 260px;
   margin: 0 auto;
-  padding-bottom: 29px 0 33px 0;
+  padding-top: 27px;
+  padding-bottom: 35px;
 }
 
 .item__title {
-  margin-top: 26px;
 
   h2 {
     margin: 0;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
     .font-style(@font-size: 25px, @line-height: 30px, @base-color: #000000);
   }
 
@@ -24,7 +24,7 @@
 }
 
 .item__desc-info {
-  margin-bottom: 36px;
+
 }
 
 .item__features {
@@ -38,12 +38,12 @@
 }
 
 .item__desc {
-  padding-bottom: 27px;
+  padding-bottom: 25px;
 }
 
 .item__desc-content {
   border-bottom: #f1f1f1 solid 1px;
-  padding-top: 5px;
+  padding-top: 4px;
   padding-bottom: 10px;
 
   p {
@@ -52,30 +52,20 @@
   }
 }
 
-.item__desc-content-color {
-  display: inline-block;
-  vertical-align: middle;
-  width: 35%;
-}
-
-.item__desc-content-color-name {
-  display: inline-block;
-  vertical-align: middle;
-}
-
+.item__desc-content-color,
 .item__desc-content-size {
   display: inline-block;
   vertical-align: middle;
   width: 36%;
 }
 
+.item__desc-content-color-name,
 .item__desc-content-size-name {
   display: inline-block;
   vertical-align: middle;
 }
 
 .item__img {
-  margin: 0 auto;
   background-color: @bg-light-grey;
   overflow: hidden;
   text-align: center;
@@ -84,7 +74,8 @@
 .item__price {
   .font-style;
   text-align: center;
-  padding: 20px 0 25px 0;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .item__button-order {
@@ -106,7 +97,7 @@
   .item__title {
     margin-top: 0;
     display: flex;
-}
+  }
 
   .item__title h2 {
     width: 85%;
@@ -127,11 +118,10 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-top: 47px;
+    padding-top: 43px;
   }
 
   .item__features {
-    clear: both;
     width: 290px;
     order: 1;
     padding: 0;
@@ -144,16 +134,14 @@
   .item__desc {
     order: 2;
     width: 290px;
-    padding: 37px 0 35px 0;
+    padding: 37px 0;
   }
 
   .item__img {
     position: absolute;
     right: 0;
-    bottom: 0;
-    align-items: center;
+    bottom: -6px;
     order: 5;
-
   }
 
   .item__price {
@@ -182,8 +170,8 @@
 
   .item {
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -204,6 +192,7 @@
   .item__title  span {
     padding-left: 20px;
     padding-right: 27px;
+    padding-top: 18px;
     width: 125px;
   }
 
@@ -225,10 +214,10 @@
     width: 350px;
     padding-top: 110px;
     order: 1;
-  }
 
-  .item__features p {
-    padding-right: 60px;
+    p {
+      padding-right: 60px;
+    }
   }
 
   .item__desc {
@@ -241,7 +230,6 @@
     position: absolute;
     right: 0;
     top: 0;
-    align-items: center;
     order: 5;
     width: 525px;
     height: 640px;
