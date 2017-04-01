@@ -10,8 +10,8 @@
 .main-header__logo {
   width: 80px;
   margin: 0 auto;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin-top: 25px;
+  margin-bottom: 17px;
 
   img {
     text-align: center;
@@ -92,6 +92,7 @@
   border-top: 1px solid #ebebeb;
 
   a {
+
     &:hover {
       color: rgba(0, 0, 0, 0.6);
     }
@@ -121,8 +122,8 @@
 
   svg {
     position: absolute;
-    left: 30px;
-    top: 40px;
+    left: 43%;
+    top: 40%;
     opacity: 0.2;
 
     &:hover {
@@ -137,7 +138,8 @@
 }
 
 .main-header__user-list--basket svg {
-  top: 17px;
+  top: 28%;
+  left: 13%;
 }
 
 
@@ -184,9 +186,14 @@
     display: block;
   }
 
-  .main-header__user-list--basket svg {
-  top: 27px;
-}
+  .main-header__user-list--search,
+  .main-header__user-list--basket {
+
+    svg {
+      left: 9%;
+      top: 38%;
+    }
+  }
 }
 
 @media @tablet-widths {
@@ -198,7 +205,6 @@
   .main-header__container {
     margin: 0 auto;
     width: 100%;
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -236,7 +242,7 @@
   }
 
   .main-header__menu {
-    width: 51%;
+    width: 52%;
     margin: 0;
     align-self: center;
   }
@@ -293,7 +299,7 @@
 
   .main-header__user-list--basket a {
     text-align: left;
-    padding-left: 80px;
+    padding-left: 85px;
   }
 }
 
