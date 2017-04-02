@@ -26,4 +26,3 @@ for (var i = 0; i < linkbasket.length; i++) {
       }
   });
 };
-
