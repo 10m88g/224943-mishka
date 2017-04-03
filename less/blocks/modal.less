@@ -26,7 +26,7 @@
   top: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.7);
-  z-index: 100;
+  z-index: -1;
 }
 
 .modal {
@@ -175,9 +175,8 @@
 @media @desktop-widths {
   .modal {
     width: 568px;
+    left: 25%;
     padding-top: 30px;
-    padding-left: 108px;
-    padding-right: 108px;
   }
 
   .modal__wrapper {
